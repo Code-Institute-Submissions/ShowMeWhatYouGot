@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo:100,200,300,400,500,600,700|Gloria+Hallelujah:100,200,300,400,500,600,700');
+
+body {
+    font-family: "Dokdo", sans-serif;
+}
+
+/*---------------------------------------------------Backgrounds*/
+
+/*index.html background*/
+.background-home { 
+    background: url('/assets/images/backgrounds/portal.png') no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*---------------------------------------------------/Backgrounds*/
+
+/*---------------------------------------------------Headers*/
+
+/*logo*/
+.container-header img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+/*title*/
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*---------------------------------------------------/Headers*/
+
+/*---------------------------------------------------Enter Section*/
+
+/*Portal Gun*/
+.container-enter img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-right: 13px;
+}
+
+/*Enter Button*/
+.btn {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 150px;
+    height: 50px;
+}
+
+.btn--enter {
+    color: #fff;
+    background-color: #f50909f8;
+    border: solid #fff 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.btn--enter a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+/*---------------------------------------------------/Enter Section*/
+
+/*---------------------------------------------------Footer*/
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    text-align: center;
+}
+
+#footer-details h5 {
+    font-family: "Gloria Hallelujah", cursive;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-inline-item a {
+    color: #000;
+    text-align: center;
+}
+
+/*---------------------------------------------------/Footer*/
