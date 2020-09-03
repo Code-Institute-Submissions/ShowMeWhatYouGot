@@ -73,6 +73,65 @@ h1 {
 
 /*---------------------------------------------------/Enter Section*/
 
+/*---------------------------------------------------/Menu Section*/
+
+.btn--menu {
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 150px;
+    height: 50px;
+}
+
+.btn--play {
+    width: 200px;
+    color: #fff;
+    background-color: #f50909f8;
+    border: solid #fff 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.btn--play a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.btn--how-to-play {
+    width: 200px;
+    color: #fff;
+    background-color: #f50909f8;
+    border: solid #fff 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.btn--how-to-play a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.btn--sounds {
+    width: 200px;
+    color: #fff;
+    background-color: #f50909f8;
+    border: solid #fff 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.btn--sounds a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+/*---------------------------------------------------/Menu Section*/
+
 /*---------------------------------------------------Footer*/
 
 footer {
@@ -98,3 +157,37 @@ ul {
 }
 
 /*---------------------------------------------------/Footer*/
+
+/*---------------------------------------------------Modal*/
+
+.modal-content {
+    background: url("/assets/images/backgrounds/modal-bg.png") no-repeat center center;
+    height: 97vh;
+}
+
+.opaque-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    font-family: "Gloria Hallelujah", cursive;
+    border: none;
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+/*---------------------------------------------------/Modal*/
+
+

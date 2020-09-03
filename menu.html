@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External Library-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />
+    <!--/External Library-->
+
+    <!--Local Library-->
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <!--/Local Library-->
+    <title>Show Me What You Got</title>
+</head>
+<body>
+<!--Background-->
+<div class="background-home">
+
+<!--Header-->
+    <div class="container-fluid container-header">
+        <a href="index.html"><img src="/assets/images/icons/logo.png" alt="logo"></a>
+        <h1 class="title">Show Me What You Got!</h1>
+    </div>
+<!--/Header-->
+
+<!--Menu Section-->
+    <section>
+        <button class="btn btn-lg btn--menu btn--play">Play</button>
+        <button class="btn btn-lg btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
+        <button class="btn btn-lg btn--sounds" data-toggle="modal" data-target="#sounds-modal">Sounds</button>
+    </section>
+<!--/Menu Section-->
+
+<!--Footer-->
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-12">
+                <h5 class="footer-header"><i class="fa fa-copyright" aria-hidden="true"></i> Steven Nicholson</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/bicks79" target="_blank">
+						    <i class="fa fa-github" aria-hidden="true"></i>
+							<span class="sr-only">github</span>
+						</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/steven-nicholson-1bb7a7184/" target="_blank">
+						    <i class="fa fa-linkedin" aria-hidden="true"></i>
+							<span class="sr-only">linkedin</span>
+						</a>
+                    </li>
+                     <li class="list-inline-item">
+                        <a href="https://www.instagram.com/bicks79/?hl=en" target="_blank">
+						    <i class="fa fa-instagram" aria-hidden="true"></i>
+							<span class="sr-only">instagram</span>
+						</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<!--/Footer-->
+
+<!--How to Play Modal-->
+<div class="modal" tabindex="-1" role="dialog" id="how-to-play-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="opaque-overlay">&nbsp;</div>
+      <div class="modal-header">
+        <h5 class="modal-title">How to Play...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> 1. Play as
+            <img class="tiny-rick" src="/assets/images/icons/rick-sm.png" alt="tiny-rick"> or <img class="tiny-morty" src="/assets/images/icons/morty-sm.png" alt="tiny-morty">
+        and slide the tiles to unscramble the puzzle.</p>
+        <br>
+        <p>2. Solve all the levels to unlock the bonus puzzle.
+      </div>
+        <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!--/How to Play Modal-->
+
+<!--Sounds-->
+<div class="modal" tabindex="-1" role="dialog" id="sounds-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/Sounds-->
+
+<!--/Background--> 
+</div>
+<!--External Library-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--/External Library-->
+</body>
+</html>
