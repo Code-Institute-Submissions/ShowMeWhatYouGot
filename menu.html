@@ -29,7 +29,7 @@
     <section>
         <button class="btn btn-lg btn--menu btn--play">Play</button>
         <button class="btn btn-lg btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
-        <button class="btn btn-lg btn--sounds" data-toggle="modal" data-target="#sounds-modal">Sounds</button>
+        <button class="btn btn-lg btn--sounds" data-toggle="modal" data-target="#audio-modal">Audio</button>
     </section>
 <!--/Menu Section-->
 
@@ -64,49 +64,77 @@
 <!--/Footer-->
 
 <!--How to Play Modal-->
-<div class="modal" tabindex="-1" role="dialog" id="how-to-play-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-     <div class="opaque-overlay">&nbsp;</div>
-      <div class="modal-header">
-        <h5 class="modal-title">How to Play...</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p> 1. Play as
-            <img class="tiny-rick" src="/assets/images/icons/rick-sm.png" alt="tiny-rick"> or <img class="tiny-morty" src="/assets/images/icons/morty-sm.png" alt="tiny-morty">
-        and slide the tiles to unscramble the puzzle.</p>
-        <br>
-        <p>2. Solve all the levels to unlock the bonus puzzle.
-      </div>
-        <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+    <div class="modal" tabindex="-1" role="dialog" id="how-to-play-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">How to Play...</h5>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Press 'play' to start the game</li>
+                        <li>Select your difficulty level...
+                            <div class="row">
+                                <div class="col-12 tiny-rick">
+                                    <img src="/assets/images/icons/rick-head.png" alt="tiny-rick">
+                                    <p>Rick (3x3)</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 tiny-morty">
+                                    <img class="tiny-morty" src="/assets/images/icons/morty-head.png" alt="tiny-morty">
+                                    <p>Morty (4x4)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Move the tiles to unscramble the picture and complete the puzzle.</li>
+                        <li>Complete all the puzzles to unlock the bonus puzzle.</li>
+                        <li>Complete the bonus puzzle to win the game.</li>
+                        <li>Get Schwify!!</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<!--/How to Play Modal-->
+    <!--/How to Play Modal-->
 
-<!--Sounds-->
-<div class="modal" tabindex="-1" role="dialog" id="sounds-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
+    <!--Sounds-->
+    <div class="modal" tabindex="-1" role="dialog" id="audio-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Audio...</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 music">
+                            <h5>Music</h5>
+                            <p>Turn the in-game music up/down</p>
+                            <label for="music-volume-slider" class="music-volume-label">Volume: </label>
+                            <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume">
+                            <hr>
+                            <p>Turn the in-game music on/off</p>
+                            <label class="btn btn--radio active">
+                                <input type="radio" name="options" id="music-on" autocomplete="off" checked> ON
+                            </label>
+                            <label class="btn btn--radio">
+                                <input type="radio" name="options" id="music-off" autocomplete="off"> OFF
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<!--/Sounds-->
+    <!--/Sounds-->
 
 <!--/Background--> 
 </div>
