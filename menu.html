@@ -26,11 +26,11 @@
 <!--/Header-->
 
 <!--Menu Section-->
-    <section>
-        <button class="btn btn-lg btn--menu btn--play">Play</button>
-        <button class="btn btn-lg btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
-        <button class="btn btn-lg btn--audio" data-toggle="modal" data-target="#audio-modal">Audio</button>
-    </section>
+    <div class="btn-group-vertical ">
+        <button type="button" class="btn btn--menu btn--play">Play</button>
+        <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
+        <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal">Audio</button>
+    </div>
 <!--/Menu Section-->
 
 <!--Footer-->
@@ -74,6 +74,7 @@
                 <div class="modal-body">
                     <ol>
                         <li>Press 'play' to start the game</li>
+                        <hr>
                         <li>Select your difficulty level...
                             <div class="row">
                                 <div class="col-12">
@@ -88,9 +89,13 @@
                                 </div>
                             </div>
                         </li>
+                        <hr>
                         <li>Move the tiles to unscramble the picture and complete the puzzle.</li>
+                        <hr>
                         <li>Complete all the puzzles to unlock the bonus puzzle.</li>
+                        <hr>
                         <li>Complete the bonus puzzle to win the game.</li>
+                        <hr>
                         <li>Get Schwify!!</li>
                     </ol>
                 </div>
@@ -102,9 +107,9 @@
     </div>
     <!--/How to Play Modal-->
 
-    <!--Sounds-->
+    <!--Audio-->
     <div class="modal" tabindex="-1" role="dialog" id="audio-modal">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="opaque-overlay">&nbsp;</div>
                 <div class="modal-header">
@@ -114,17 +119,23 @@
                     <div class="row">
                         <div class="col-12 music">
                             <h5>Music</h5>
-                            <p>Turn the in-game music up/down</p>
-                            <label for="music-volume-slider" class="music-volume-label">Volume: </label>
-                            <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume">
-                            <hr>
-                            <p>Turn the in-game music on/off</p>
-                            <label class="btn btn--radio active">
-                                <input type="radio" name="options" id="music-on" autocomplete="off" checked> ON
-                            </label>
-                            <label class="btn btn--radio">
-                                <input type="radio" name="options" id="music-off" autocomplete="off"> OFF
-                            </label>
+                            <p class="audio-text">Turn the in-game music up/down</p>
+                            <label for="audio-volume-slider" class="music-volume-label">Volume: </label>
+                            <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
+                            <hr>                           
+                            <p class="audio-text">Turn the in-game music on/off</p>
+                            <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true" autocomplete="off">on</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 effects">
+                            <h5>Sound-Effects</h5>
+                            <p class="audio-text">Turn the in-game sound-effects up/down</p>
+                            <label for="audio-volume-slider" class="effects-volume-label">Volume: </label>
+                            <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                            <hr>                           
+                            <p class="audio-text">Turn the in-game sound-effects on/off</p>
+                            <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true" autocomplete="off">on</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +145,7 @@
             </div>
         </div>
     </div>
-    <!--/Sounds-->
+    <!--/Audio-->
 
 <!--/Background--> 
 </div>

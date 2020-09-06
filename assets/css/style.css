@@ -43,32 +43,41 @@ h1 {
 /*Portal Gun*/
 .container-enter img {
     display: flex;
-    margin: 0 auto;
-    padding-top: 35px;
+    margin: 35px auto 0px auto;
     padding-right: 13px;
     z-index: 1;
 }
 
-/*Enter Button*/
+/*Button Setup*/
 .btn {
+    color: #fff;
     display: flex;
     justify-content: center;
-    margin: 25px auto 0px auto;
-    width: 150px;
+    margin: 0 auto;
+    width: 200px;
     height: 50px;
-}
-
-.btn--enter {
-
-    color: #fff;
     background-color: #f50909f8;
-    border: solid #fff 3px;
+    border: solid 3px #fff;
+    border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 30px;
     line-height: 1;
 }
 
+/*Button Hover*/
+.btn:hover {
+    color: #fff;
+    text-decoration-line: none;
+    background-color: #b30c0cf8;
+}
+
+/*Enter Button*/
+.btn--enter {
+    margin-top: 35px;
+}
+
+/*Enter Button Link Element*/
 .btn--enter a {
     color: #fff;
     text-decoration-line: none;
@@ -78,56 +87,46 @@ h1 {
 
 /*---------------------------------------------------/Menu*/
 
-.btn--menu {
-    display: block;
-    margin: 50px auto 0px auto;
-    width: 150px;
-    height: 50px;
+/*Button Group*/
+.btn-group-vertical {
+    top: 50px;
+    display: flex;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 250px;
 }
 
-.btn--play {
-    width: 200px;
-    color: #fff;
-    background-color: #f50909f8;
-    border: solid #fff 3px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 30px;
-    line-height: 1;
+/*Play Button*/
+button .btn--play {
+    line-height: 1.2;
 }
 
+/*Play Button Link Element*/
 .btn--play a {
     color: #fff;
     text-decoration-line: none;
 }
 
+/*How to Play Button*/
 .btn--how-to-play {
-    width: 200px;
-    color: #fff;
-    background-color: #f50909f8;
-    border: solid #fff 3px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 25px;
     line-height: 1.2;
 }
 
+/*How to Play Link Element*/
 .btn--how-to-play a {
     color: #fff;
     text-decoration-line: none;
 }
 
+/*Audio Button*/
 .btn--audio {
-    width: 200px;
-    color: #fff;
-    background-color: #f50909f8;
-    border: solid #fff 3px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 30px;
-    line-height: 1;
+    line-height: 1.2;
 }
 
+/*Audio Button Link Element*/
 .btn--audio a {
     color: #fff;
     text-decoration-line: none;
@@ -137,6 +136,7 @@ h1 {
 
 /*---------------------------------------------------Footer*/
 
+/*Footer*/
 footer {
     position:fixed;
     bottom:0;
@@ -144,16 +144,19 @@ footer {
     text-align: center;
 }
 
+/*Name*/
 #footer-details h5 {
     font-family: "Gloria Hallelujah", cursive;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
+/*Social Icons*/
 ul {
     list-style-type: none;
 }
 
+/*Social Icons Link Element*/
 .list-inline-item a {
     color: #000;
     text-align: center;
@@ -163,11 +166,13 @@ ul {
 
 /*---------------------------------------------------How to Play Modal*/
 
+/*Modal Background*/
 .modal-content {
     background: url("/assets/images/backgrounds/modal-bg-blue.png") no-repeat left top;
     height: 97vh;
 }
 
+/*Opaque Overlay*/
 .opaque-overlay {
     position: absolute;
     height: 100%;
@@ -175,6 +180,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/*How to Play Header*/
 .modal-header {
     z-index: 1;
     font-family: "Gloria Hallelujah", cursive;
@@ -183,6 +189,7 @@ ul {
     color: #fff;
 }
 
+/*How to Play Title*/
 .modal-title {
     z-index: 1;
     color: #fff;
@@ -191,6 +198,7 @@ ul {
     margin: 0 auto;
 }
 
+/*Instructions*/
 .modal-body {
     z-index: 1;
     color: #fff;
@@ -200,6 +208,7 @@ ul {
     font-weight: 300;
 }
 
+/*Modal List Item*/
 .modal-body li {
     z-index: 1;
     font-family: "Gloria Hallelujah", cursive;
@@ -209,6 +218,7 @@ ul {
     font-weight: 300;
 }
 
+/*Tiny Rick Image*/
 .tiny-rick {
     display: inline-flex;
     margin-top: 25px;
@@ -219,10 +229,12 @@ ul {
     margin-right: 2px;
 }
 
+/*Tiny Rick Text*/
 .htp-rick-text {
     display: inline-flex;
 }
 
+/*Tiny Morty Image*/
 .tiny-morty {
     display: inline-flex;
     margin-top: 25px;
@@ -233,49 +245,65 @@ ul {
     margin-right: 2px;
 }
 
+/*Tiny Morty Text*/
 .htp-morty-text {
     display: inline-flex;
 }
 
+/*Modal Footer*/
 .modal-footer {
     height: 75px;
     border: none;
     border-top: solid 1px;
     color: #fff;
     z-index: 1;
+    line-height: 1px;
 }
 
-.modal-footer .btn--close {
-    margin: 0 auto;
-    width: 150px;
-    height:50px;
-    color: #fff;
-    background-color: #f50909f8;
-    border: solid #fff 3px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 30px;
-    line-height: 1;
+/*Close Text*/
+.close {
     opacity: inherit;
+    line-height: 1.5;
 }
 
+ .modal-footer .btn--close{
+    width: 200px;
+    height: 50px;
+    background-color: #f50909f8;
+    border: solid 3px #fff;
+    border-radius: 5px;
+}
 
 /*---------------------------------------------------/How to Play Modal*/
 
 /*---------------------------------------------------Audio Modal*/
 
+/*Audio Modal Sub-title*/
 .music h5 {
     font-size: 25px;
     font-weight: 300;
     text-align: center;
 }
 
-/*.modal-body p {
+.effects h5 {
+    margin-top:35px;
+    font-size: 25px;
+    font-weight: 300;
     text-align: center;
-    line-height: 2;
-}*/
+}
 
-.music-volume-label {
+.audio-text {
+    text-align: center;
+}
+
+.modal-body .btn--audio {
+    width: 75px;
+    font-family: "Dokdo", cursive;
+    line-height: 1.2;
+}
+
+/*Audio Volume Label*/
+.audio-volume-label {
     margin: 0 auto;
 }
 
