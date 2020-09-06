@@ -164,6 +164,36 @@ ul {
 
 /*---------------------------------------------------/Footer*/
 
+/*---------------------------------------------------Play Modal*/
+
+.modal-sub-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    margin-bottom: 20px;
+}
+
+.play-rick {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.play-rick img:hover {
+    animation: shake 0.5;
+    animation-iteration-count: infinite;
+}
+
+.play-morty {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/*---------------------------------------------------/Play Modal*/
+
 /*---------------------------------------------------How to Play Modal*/
 
 /*Modal Background*/
@@ -218,36 +248,43 @@ ul {
     font-weight: 300;
 }
 
+/*htp Player-Select Icons*/
+.htp-player-select {
+    text-align: center;
+}
+
 /*Tiny Rick Image*/
 .tiny-rick {
-    display: inline-flex;
-    margin-top: 25px;
+    margin-top:30px;
+    padding: 0px;
     background-color: #1616166a;
-    height: 120px;
-    width: 120px;
     border-radius: 50%;
-    margin-right: 2px;
 }
 
 /*Tiny Rick Text*/
-.htp-rick-text {
-    display: inline-flex;
+.rick-text {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 25px;
+    padding-bottom: 15px
 }
 
 /*Tiny Morty Image*/
 .tiny-morty {
-    display: inline-flex;
-    margin-top: 25px;
+    margin-top:30px;
+    padding: 0px;
     background-color: #1616166a;
-    height: 120px;
-    width: 120px;
     border-radius: 50%;
-    margin-right: 2px;
 }
 
 /*Tiny Morty Text*/
-.htp-morty-text {
-    display: inline-flex;
+.morty-text {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 25px;
+    padding-bottom: 15px;
 }
 
 /*Modal Footer*/
@@ -366,3 +403,21 @@ ul {
 }
 
 /*---------------------------------------------------/Audio Modal*/
+
+/*---------------------------------------------------Keyframes*/
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*---------------------------------------------------Keyframes*/
