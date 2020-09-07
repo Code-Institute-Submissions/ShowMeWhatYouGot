@@ -16,6 +16,33 @@ body {
     height: 100vh;
 }
 
+.background-rick { 
+    background: url('/assets/images/backgrounds/garage.png') no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.background-morty { 
+    background: url('/assets/images/backgrounds/bedroom.png') no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.background-bonus { 
+    background: url('/assets/images/backgrounds/bedroom.png') no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
 /*---------------------------------------------------/Backgrounds*/
 
 /*---------------------------------------------------Headers*/
