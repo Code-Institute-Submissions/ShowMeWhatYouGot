@@ -22,8 +22,7 @@ body {
 
 /*logo*/
 .container-header img {
-    display: block;
-    margin: 0 auto;
+    display: flex;
     padding-top: 35px;
 }
 
@@ -34,6 +33,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     padding-top: 20px;
+    margin-bottom: 30px
 }
 
 /*---------------------------------------------------/Headers*/
@@ -41,11 +41,9 @@ h1 {
 /*---------------------------------------------------Enter*/
 
 /*Portal Gun*/
-.container-enter img {
-    display: flex;
-    margin: 35px auto 0px auto;
-    padding-right: 13px;
-    z-index: 1;
+.portal-gun {
+    margin: 0 auto;
+    justify-content: center;
 }
 
 /*Button Setup*/
@@ -172,24 +170,17 @@ ul {
     text-align: center;
     text-decoration-line: underline;
     text-underline-position: under;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.play-rick {
-    display: block;
+ul {
+    padding: 10px;
     text-align: center;
-    width: 100%;
 }
 
-.play-rick img:hover {
-    animation: shake 0.5;
-    animation-iteration-count: infinite;
-}
-
-.play-morty {
-    display: block;
-    text-align: center;
-    width: 100%;
+.btn--play-sm {
+    font-family: "Dokdo",cursive;
+    line-height: 1.2;
 }
 
 /*---------------------------------------------------/Play Modal*/
@@ -198,8 +189,9 @@ ul {
 
 /*Modal Background*/
 .modal-content {
-    background: url("/assets/images/backgrounds/modal-bg-blue.png") no-repeat left top;
-    height: 97vh;
+    background: url("/assets/images/backgrounds/portal.png") no-repeat center center;
+    height: 100vh;
+    border: 3px solid #fff;
 }
 
 /*Opaque Overlay*/
@@ -242,7 +234,7 @@ ul {
 .modal-body li {
     z-index: 1;
     font-family: "Gloria Hallelujah", cursive;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 300;
@@ -315,22 +307,9 @@ ul {
 
 /*---------------------------------------------------Audio Modal*/
 
-/*Audio Modal Sub-title*/
-.music h5 {
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.effects h5 {
-    margin-top:35px;
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
-}
-
 .audio-text {
     text-align: center;
+    line-height: 1.8;
 }
 
 .modal-body .btn--audio {
@@ -341,83 +320,69 @@ ul {
 
 /*Audio Volume Label*/
 .audio-volume-label {
-    margin: 0 auto;
-}
-
-/*W3 Schools*/
-.slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 65%;
-    height: 5px;
-    border-radius: 10px;
-    background: #f2f2f2;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    vertical-align: middle;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50px;
-  background:  #f50909f8;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50px;
-  background:  #f50909f8;
-  cursor: pointer;
-}
-
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    margin: 0 auto 20px;
 }
 
 /*---------------------------------------------------/Audio Modal*/
 
-/*---------------------------------------------------Keyframes*/
+/*---------------------------------------------------Custom Slider - CSS Tricks*/
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+/*Removes Original Setup*/
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
 }
 
-/*---------------------------------------------------Keyframes*/
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+/*Slider Thumb*/
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/icons/plumbus.png") no-repeat center center;
+    cursor: pointer;
+    margin-top: -25px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+input[type=range]::-moz-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/icons/plumbus.png") no-repeat center center;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/icons/plumbus.png") no-repeat center center;
+}
+
+/*Slider-Track*/
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer; 
+    background: #06f006f8;
+    border-radius: 3px;
+    border: 1.5px solid #000;
+}
+
+/*---------------------------------------------------/Custom Slider - CSS Tricks*/

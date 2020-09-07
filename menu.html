@@ -20,17 +20,25 @@
 <div class="background-home">
 
 <!--Header-->
-    <div class="container-fluid container-header">
-        <a href="index.html"><img src="/assets/images/icons/logo.png" alt="logo"></a>
-        <h1 class="title">Show Me What You Got!</h1>
+<div class="container-fluid container-header">
+        <div class="row justify-content-center">
+            <a href="index.html"><img src="/assets/images/icons/logo.png" class="col-12 logo" alt="logo"></a>
+        </div>
+        <div class="row justify-content-center">
+            <h1 class="title col-12">Show Me What You Got!</h1>
+        </div>
     </div>
 <!--/Header-->
 
 <!--Menu Section-->
-    <div class="btn-group-vertical ">
-        <button type="button" class="btn btn--play" data-toggle="modal" data-target="#play-modal">Play</button>
-        <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
-        <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal">Audio</button>
+    <div class="container-fluid container-menu">
+        <div class="row">
+            <div class="btn-group-vertical ">
+                <button type="button" class="btn btn--play" data-toggle="modal" data-target="#play-modal">Play</button>
+                <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
+                <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal">Audio</button>
+            </div>
+        </div>
     </div>
 <!--/Menu Section-->
 
@@ -75,17 +83,28 @@
                 <div class="modal-body">
                     <h5 class="modal-sub-title">Rick</h5>
                     <div class="row">
-                        <div class="col-12 play-rick shake-chunk shake-constant">
-                            <a href="#"><img src="/assets/images/icons/rick-head-play.png" alt="Play-Rick"></a>
-                        </div>
-                        <p class="rick-text">You're the smartest man in the universe, this should be a breeze!</p>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="/assets/images/icons/rick-head-play.png" class="shake-slow shake-constant rick-play" alt="Play-Rick"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--play-sm">Play</a>
+                            </li>
+                            <li>You're the smartest man in the universe, this is going to be <em>EASY!</em></li>
+                        </ul>
                     </div>
+                    <hr>
                     <h5 class="modal-sub-title">Morty</h5>
                     <div class="row">
-                        <div class="col-12 play-morty shake shake-constant">
-                            <a href="#"><img src="/assets/images/icons/morty-head-play.png" alt="Play-Morty"></a>
-                        </div>
-                        <p class="rick-text">This is hard, you should give up and watch Interdimensional cable!</p>  
+                        <ul>
+                            <li>
+                                <a href="#"><img src="/assets/images/icons/morty-head-play.png" class="shake-rotate shake-constant morty-play" alt="Play-Rick"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--play-sm">Play</a>
+                            </li>
+                            <li>This is <em>HARD</em>, maybe you should just give up and watch Interdimensional cable!</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -107,7 +126,6 @@
                 <div class="modal-body">
                     <ol>
                         <li>Press 'play' to start the game</li>
-                        <hr>
                         <li>Select your difficulty level...
                             <div class="row">
                                 <div class="col-12 htp-player-select">
@@ -118,11 +136,8 @@
                                 </div>
                             </div>
                         </li>
-                        <hr>
                         <li>Move the tiles to unscramble the picture and complete the puzzle.</li>
-                        <hr>
                         <li>Complete all the puzzles to unlock the bonus puzzle.</li>
-                        <hr>
                         <li>Complete the bonus puzzle to win the game.</li>
                     </ol>
                 </div>
@@ -144,26 +159,31 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-12 music">
-                            <h5 class="modal-sub-title">Music</h5>
-                            <p class="audio-text">Turn the in-game music up/down</p>
-                            <label for="audio-volume-slider" class="music-volume-label">Volume: </label>
-                            <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
-                            <hr>                           
-                            <p class="audio-text">Turn the in-game music on/off</p>
-                            <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true" autocomplete="off">on</button>
-                        </div>
+                        <h5 class=" col-12 modal-sub-title">Music</h5>
+                        <ul>
+                            <li>
+                                <label for="music-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
+                                <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
+                            </li>                          
+                            <li class="audio-text">Turn the in-game music on/off: </li>
+                            <li>
+                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                            </li>
+                        </ul>
                     </div>
+                    <hr>
                     <div class="row">
-                        <div class="col-12 effects">
-                            <h5 class="modal-sub-title">Sound-Effects</h5>
-                            <p class="audio-text">Turn the in-game sound-effects up/down</p>
-                            <label for="audio-volume-slider" class="effects-volume-label">Volume: </label>
-                            <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
-                            <hr>                           
-                            <p class="audio-text">Turn the in-game sound-effects on/off</p>
-                            <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true" autocomplete="off">on</button>
-                        </div>
+                        <h5 class=" col-12 modal-sub-title">Sound-Effects</h5>
+                        <ul>
+                            <li>
+                                <label for="effects-volume-slider" class="audio-volume-label">Turn the in-game sound-effects volume up/down: </label>
+                                <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                            </li>                         
+                            <li class="audio-text">Turn the in-game sound-effects on/off: </li>
+                            <li>
+                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="modal-footer">
