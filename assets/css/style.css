@@ -431,25 +431,55 @@ input[type=range]::-webkit-slider-runnable-track {
     5px;
 }
 
-#table {
+#table-3x3 {
     margin: 15px auto;
 }
 
-.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+.tile1-3x3, .tile2-3x3, .tile3-3x3, .tile4-3x3, .tile5-3x3, .tile6-3x3, .tile7-3x3, .tile8-3x3, .tile9-3x3 {
   display: table-cell;
   width: 101px;
   height: 99px;
-  border: 1px solid #fff;
+  border: 1px solid #1b810fd1;
   background: url("/assets/images/puzzles/vat-of-acid.png"); 
   cursor: pointer;
 }
 
-.tile1 {background-position: left top;}
-.tile2 {background-position: center top;}
-.tile3 {background-position: right top;}
-.tile4 {background-position: left center;}
-.tile5 {background-position: center center;}
-.tile6 {background-position: right center;}
-.tile7 {background-position: left bottom;}
-.tile8 {background-position: center bottom;}
-.tile9 {background: white; cursor: default;}
+.tile1-3x3 {background-position: left top;}
+.tile2-3x3 {background-position: center top;}
+.tile3-3x3 {background-position: right top;}
+.tile4-3x3 {background-position: left center;}
+.tile5-3x3 {background-position: center center;}
+.tile6-3x3 {background-position: right center;}
+.tile7-3x3 {background-position: left bottom;}
+.tile8-3x3 {background-position: center bottom;}
+.tile9-3x3 {background: white; cursor: default;}
+
+#table-4x4 {
+    margin: 15px auto;
+}
+
+.tile1-4x4, .tile2-4x4, .tile3-4x4, .tile4-4x4, .tile5-4x4, .tile6-4x4, .tile7-4x4, .tile8-4x4, .tile9-4x4, .tile10-4x4, .tile11-4x4, .tile12-4x4, .tile13-4x4, .tile14-4x4, .tile15-4x4, .tile16-4x4 {
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1b810fd1;
+  background: url("/assets/images/puzzles/evil-morty.png"); 
+  cursor: pointer;
+}
+
+.tile1-4x4 {background-position: 0px 0px;}
+.tile2-4x4 {background-position: -80px 0px;}
+.tile3-4x4 {background-position: -160px 0px;}
+.tile4-4x4 {background-position: -240px 0px;}
+.tile5-4x4 {background-position: 0px -80px;}
+.tile6-4x4 {background-position: -80px -80px;}
+.tile7-4x4 {background-position: -160px -80px;}
+.tile8-4x4 {background-position: -240px -80px;}
+.tile9-4x4 {background-position: 0px -160px;}
+.tile10-4x4 {background-position: -80px -160px;}
+.tile11-4x4 {background-position: -160px -160px;}
+.tile12-4x4 {background-position: -240px -160px;}
+.tile13-4x4 {background-position: 0px -240px;}
+.tile14-4x4 {background-position: -80px -240px;}
+.tile15-4x4 {background-position: -160px -240px;}
+.tile16-4x4 {background: white; cursor: default;}
