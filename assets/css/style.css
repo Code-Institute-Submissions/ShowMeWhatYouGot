@@ -418,18 +418,29 @@ input[type=range]::-webkit-slider-runnable-track {
 /*---------------------------------------------------Gameplay Grid*/
 
 .container-game {
+    width: 360px;
+    height:70vh;
     margin-top: 20px ;
+    background: #1b810fd1;
+    border: 5px solid #fff;
+    border-radius: 15px;
 }
 
 .btn--game {
-    margin-top: 15px;
+    margin-top: 
+    5px;
 }
+
+#table {
+    margin: 15px auto;
+}
+
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
   display: table-cell;
-  width: 120px;
-  height: 120px;
-  border: 1px solid white;
-  background: url("/assets/images/puzzles/pickle-rick-puzzle.png"); 
+  width: 101px;
+  height: 99px;
+  border: 1px solid #fff;
+  background: url("/assets/images/puzzles/vat-of-acid.png"); 
   cursor: pointer;
 }
 
