@@ -4,8 +4,9 @@ function swapTiles(cell1,cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
-  console.log(cell1)
-  console.log(cell2)
+  console.log(cell1);
+  console.log(cell2);
+  console.log(checkWin());
 }
 
 function shuffle() {
@@ -55,4 +56,33 @@ function clickTile(row,column) {
        } 
   }
   
+}
+
+function checkWin() {
+    var row1 = document.getElementById("row1");
+    for(var i=0; i<row1.children.length;i++) {
+        var n = i+1;
+        console.log(row1.children);
+        if(row1.children[i].className!="tile"+n.toString()+"-3x3") {
+            console.log(1);
+            return false;
+        }
+    }
+    var row2 = document.getElementById ("row2");
+    for(var i=0; i<row2.children.length;i++) {
+        var n = i+4;
+        if(row2.children[i].className!="tile"+n.toString()+"-3x3") {
+           console.log(2);
+            return false;
+        }
+    }
+    var row3 = document.getElementById ("row3");
+    for(var i=0; i<row3.children.length;i++) {
+        var n = i+7;
+        if(row3.children[i].className!="tile"+n.toString()+"-3x3") {
+            console.log(3);
+            return false;
+        }
+    }
+    return true;
 }
