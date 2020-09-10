@@ -65,9 +65,9 @@
 <!--/Gameplay-->
 
 <!--Footer-->
-    <!--<footer class="container-fluid">
+    <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-12">
+            <div class="col-12 d-none d-md-block">
                 <h5 class="footer-header"><i class="fa fa-copyright" aria-hidden="true"></i> Steven Nicholson</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
@@ -91,7 +91,7 @@
                 </ul>
             </div>
         </div>
-    </footer>-->
+    </footer>
 <!--/Footer-->
 
 <!--How to Play Modal-->
@@ -127,6 +127,27 @@
         </div>
     </div>
     <!--/How to Play Modal-->
+
+    <!--Win Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="win-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">I like what you got!</h5>
+                </div>
+                <div class="row">
+                    <div class="modal-body col-12">
+                        <img src="/assets/images/icons/giant-head.png" alt="Win">                    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Win Modal-->
 
     <!--Audio-->
     <div class="modal" tabindex="-1" role="dialog" id="audio-modal">

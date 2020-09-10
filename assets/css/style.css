@@ -50,7 +50,7 @@ body {
 /*logo*/
 .container-header img {
     display: flex;
-    padding-top: 35px;
+    padding-top: 25px;
 }
 
 /*title*/
@@ -419,7 +419,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .container-game {
     width: 360px;
-    height:70vh;
+    height:485px;
     margin-top: 20px ;
     background: #1b810fd1;
     border: 5px solid #fff;
