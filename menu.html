@@ -33,9 +33,9 @@
     <div class="container-fluid container-menu">
         <div class="row">
             <div class="btn-group-vertical ">
-                <button type="button" class="btn btn--play" data-toggle="modal" data-target="#play-modal">Play</button>
-                <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal">How to Play</button>
-                <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal">Audio</button>
+                <button type="button" class="btn btn--play" data-toggle="modal" data-target="#play-modal" onclick="menu();">Play</button>
+                <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal" onclick="menu();">How to Play</button>
+                <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal" onclick="menu();">Audio</button>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
                         <ul>
                             <li>You're the smartest man in the universe, this is going to be <em>EASY!</em></li>
                             <li>
-                                <a href="rick-game.html"><img src="/assets/images/icons/rick-head-play.png" class="shake-slow shake-constant rick-play" alt="Play-Rick"></a>
+                                <a href="rick-game.html"><img src="/assets/images/icons/rick-head-play.png" class="shake-slow shake-constant rick-play" alt="Play-Rick" onclick="wub();"></a>
                             </li>
                             <li>
                                 <a href="rick-game.html" class="btn btn--play-sm rick-play">Play</a>
@@ -211,5 +211,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--/External Library-->
+
+<!--Local Library-->
+<script src="/assets/javascript/audio.js" crossorigin="anonymous"></script>
+<!--/Local Library-->
 </body>
 </html>

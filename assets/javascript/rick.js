@@ -1,9 +1,9 @@
-/*---------------------------------------------------3X3 Grid*/
-
 function swapTiles(cell1,cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
   document.getElementById(cell2).className = temp;
+  console.log(cell1)
+  console.log(cell2)
 }
 
 function shuffle() {
@@ -45,7 +45,7 @@ function clickTile(row,column) {
          }
        }
        //Checking if white tile is below
-       if (row<3) {
+       if (row<4) {
          if ( document.getElementById("cell"+(row+1)+column).className=="tile9-3x3") {
            swapTiles("cell"+row+column,"cell"+(row+1)+column);
            return;
@@ -54,6 +54,8 @@ function clickTile(row,column) {
   }
   
 }
+
+
 
 //Completing the puzzle
 function checkWin() {

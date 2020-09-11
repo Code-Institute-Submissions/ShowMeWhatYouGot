@@ -45,16 +45,16 @@
                 <div id="cell33" class="tile9-3x3" onclick="clickTile(3,3);"></div>
             </div>
         </div>
-        <button  class="btn btn--game" onclick="shuffle();">Shuffle</button> 
+        <button  class="btn btn--game" onclick="shuffle();showMe();">Shuffle</button>
         <nav class="navbar">
             <ul class="list-inline nav-links">
                 <li class="list-inline-item">
                     <a href="menu.html">
-						<img src="/assets/images/icons/portal-icon.png" alt="Menu">
+						<img src="/assets/images/icons/portal-icon.png" alt="Menu" onclick="menu();">
 					</a>
                 </li>
                 <li class="list-inline-item">
-                    <img src="/assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play">
+                    <img src="/assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
                 </li>
                 <li class="list-inline-item">
                     <img src="/assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
@@ -67,7 +67,7 @@
 <!--Footer-->
     <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-12 d-none d-md-block">
+            <div class="col-12 d-none">
                 <h5 class="footer-header"><i class="fa fa-copyright" aria-hidden="true"></i> Steven Nicholson</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
