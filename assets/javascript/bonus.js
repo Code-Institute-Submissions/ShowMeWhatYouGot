@@ -22,31 +22,31 @@ for (var row=1;row<=4;row++) { //For each row of the 4x4 grid
 function clickTile(row,column) {
   var cell = document.getElementById("cell"+row+column);
   var tile = cell.className;
-  if (tile!="tile16-4x4") { 
+  if (tile!="tile16-4x4b") { 
        //Checking if white tile on the right
        if (column<4) {
-         if ( document.getElementById("cell"+row+(column+1)).className=="tile16-4x4") {
+         if ( document.getElementById("cell"+row+(column+1)).className=="tile16-4x4b") {
            swapTiles("cell"+row+column,"cell"+row+(column+1));
            return;
          }
        }
        //Checking if white tile on the left
        if (column>1) {
-         if ( document.getElementById("cell"+row+(column-1)).className=="tile16-4x4") {
+         if ( document.getElementById("cell"+row+(column-1)).className=="tile16-4x4b") {
            swapTiles("cell"+row+column,"cell"+row+(column-1));
            return;
          }
        }
          //Checking if white tile is above
        if (row>1) {
-         if ( document.getElementById("cell"+(row-1)+column).className=="tile16-4x4") {
+         if ( document.getElementById("cell"+(row-1)+column).className=="tile16-4x4b") {
            swapTiles("cell"+row+column,"cell"+(row-1)+column);
            return;
          }
        }
        //Checking if white tile is below
        if (row<4) {
-         if ( document.getElementById("cell"+(row+1)+column).className=="tile16-4x4") {
+         if ( document.getElementById("cell"+(row+1)+column).className=="tile16-4x4b") {
            swapTiles("cell"+row+column,"cell"+(row+1)+column);
            return;
          }

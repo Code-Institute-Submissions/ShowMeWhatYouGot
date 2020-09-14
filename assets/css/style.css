@@ -35,7 +35,7 @@ body {
 }
 
 .background-bonus { 
-    background: url("../../assets/images/backgrounds/bedroom.png") no-repeat left center;
+    background: url("../../assets/images/backgrounds/couch.png") no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -483,3 +483,33 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile14-4x4 {background-position: -80px -240px;}
 .tile15-4x4 {background-position: -160px -240px;}
 .tile16-4x4 {background: white; cursor: default;}
+
+#table-4x4b {
+    margin: 15px auto;
+}
+
+.tile1-4x4b, .tile2-4x4b, .tile3-4x4b, .tile4-4x4b, .tile5-4x4b, .tile6-4x4b, .tile7-4x4b, .tile8-4x4b, .tile9-4x4b, .tile10-4x4b, .tile11-4x4b, .tile12-4x4b, .tile13-4x4b, .tile14-4x4b, .tile15-4x4b, .tile16-4x4b {
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1b810fd1;
+  background: url("../../assets/images/puzzles/bonus.png"); 
+  cursor: pointer;
+}
+
+.tile1-4x4b {background-position: 0px 0px;}
+.tile2-4x4b {background-position: -80px 0px;}
+.tile3-4x4b {background-position: -160px 0px;}
+.tile4-4x4b {background-position: -240px 0px;}
+.tile5-4x4b {background-position: 0px -80px;}
+.tile6-4x4b {background-position: -80px -80px;}
+.tile7-4x4b {background-position: -160px -80px;}
+.tile8-4x4b {background-position: -240px -80px;}
+.tile9-4x4b {background-position: 0px -160px;}
+.tile10-4x4b {background-position: -80px -160px;}
+.tile11-4x4b {background-position: -160px -160px;}
+.tile12-4x4b {background-position: -240px -160px;}
+.tile13-4x4b {background-position: 0px -240px;}
+.tile14-4x4b {background-position: -80px -240px;}
+.tile15-4x4b {background-position: -160px -240px;}
+.tile16-4x4b {background: white; cursor: default;}

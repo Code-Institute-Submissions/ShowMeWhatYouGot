@@ -30,38 +30,53 @@
     <div class="container container-game">
         <div id="table-4x4" style="display: table;">
             <div id="row1" style="display: table-row;">
-                <div id="cell11" class="tile1-4x4" onclick="clickTile(1,1);"></div>
-                <div id="cell12" class="tile2-4x4" onclick="clickTile(1,2);"></div>
-                <div id="cell13" class="tile3-4x4" onclick="clickTile(1,3);"></div>
-                <div id="cell14" class="tile4-4x4" onclick="clickTile(1,4);"></div>
+                <div id="cell11" class="tile1-4x4" onclick="clickTile(1,1);swipe();"></div>
+                <div id="cell12" class="tile2-4x4" onclick="clickTile(1,2);swipe();"></div>
+                <div id="cell13" class="tile3-4x4" onclick="clickTile(1,3);swipe();"></div>
+                <div id="cell14" class="tile4-4x4" onclick="clickTile(1,4);swipe();"></div>
             </div>
             <div id="row2" style="display: table-row;">
-                <div id="cell21" class="tile5-4x4" onclick="clickTile(2,1);"></div>
-                <div id="cell22" class="tile6-4x4" onclick="clickTile(2,2);"></div>
-                <div id="cell23" class="tile7-4x4" onclick="clickTile(2,3);"></div>
-                <div id="cell24" class="tile8-4x4" onclick="clickTile(2,4);"></div>
+                <div id="cell21" class="tile5-4x4" onclick="clickTile(2,1);swipe();"></div>
+                <div id="cell22" class="tile6-4x4" onclick="clickTile(2,2);swipe();"></div>
+                <div id="cell23" class="tile7-4x4" onclick="clickTile(2,3);swipe();"></div>
+                <div id="cell24" class="tile8-4x4" onclick="clickTile(2,4);swipe();"></div>
             </div>
             <div id="row3" style="display: table-row;">
-                <div id="cell31" class="tile9-4x4" onclick="clickTile(3,1);"></div>
-                <div id="cell32" class="tile10-4x4" onclick="clickTile(3,2);"></div>
-                <div id="cell33" class="tile11-4x4" onclick="clickTile(3,3);"></div>
-                <div id="cell34" class="tile12-4x4" onclick="clickTile(3,4);"></div>
+                <div id="cell31" class="tile9-4x4" onclick="clickTile(3,1);swipe();"></div>
+                <div id="cell32" class="tile10-4x4" onclick="clickTile(3,2);swipe();"></div>
+                <div id="cell33" class="tile11-4x4" onclick="clickTile(3,3);swipe();"></div>
+                <div id="cell34" class="tile12-4x4" onclick="clickTile(3,4);swipe();"></div>
             </div>
             <div id="row4" style="display: table-row;">
-                <div id="cell41" class="tile13-4x4" onclick="clickTile(4,1);"></div>
-                <div id="cell42" class="tile14-4x4" onclick="clickTile(4,2);"></div>
-                <div id="cell43" class="tile15-4x4" onclick="clickTile(4,3);"></div>
-                <div id="cell44" class="tile16-4x4" onclick="clickTile(4,4);"></div>
+                <div id="cell41" class="tile13-4x4" onclick="clickTile(4,1);swipe();"></div>
+                <div id="cell42" class="tile14-4x4" onclick="clickTile(4,2);swipe();"></div>
+                <div id="cell43" class="tile15-4x4" onclick="clickTile(4,3);swipe();"></div>
+                <div id="cell44" class="tile16-4x4" onclick="clickTile(4,4);swipe();"></div>
             </div>
         </div>
-        <button  class="btn btn--game" onclick="shuffle();">Shuffle</button>      
+        <button  class="btn btn--game" onclick="shuffle();">Shuffle</button>
+        <nav class="navbar">
+            <ul class="list-inline nav-links">
+                <li class="list-inline-item">
+                    <a href="menu.html">
+						<img src="assets/images/icons/portal-icon.png" alt="Menu" onclick="menu();">
+					</a>
+                </li>
+                <li class="list-inline-item">
+                    <img src="assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
+                </li>
+                <li class="list-inline-item">
+                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
+                </li>
+            </ul>
+        </nav>           
     </div>
 <!--/Gameplay-->
 
 <!--Footer-->
     <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-12">
+            <div class="col-12 d-none">
                 <h5 class="footer-header"><i class="fa fa-copyright" aria-hidden="true"></i> Steven Nicholson</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
@@ -87,6 +102,107 @@
         </div>
     </footer>
 <!--/Footer-->
+
+<!--How to Play Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="how-to-play-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">How to Play...</h5>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Take a good look at the image, remember what it looks like.</li>
+                        <li>Click 'shuffle' to scramble the image.</li>
+                        <li>Move the tiles to unscramble the picture and complete the puzzle.</li>
+                        <li>Complete all the puzzles to unlock the bonus puzzle.</li>
+                        <li>Complete the bonus puzzle to win the game.</li>
+                    </ol>
+                    <div class="row">
+                        <h5 class="col-12 modal-sub-title">In-game</h5>
+                            <ul>
+                                <li>Click 'shuffle' at any time to reset the puzzle.</li>
+                                <li>Click on the portal <img src="assets/images/icons/portal-icon.png" alt="Portal Icon"> to return to the menu screen.</li>
+                                <li>If you can't remember what to do, click on the meeseeks box <img src="assets/images/icons/meeseeks-box.png" alt="Portal Icon"> for a helpful reminder.</li>
+                                <li>Click on the musical notes <img src="assets/images/icons/notes.png" alt="Audio"> to adjust, or turn on/off the in-game audio.</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/How to Play Modal-->
+
+    <!--Win Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="win-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">I like what you got!</h5>
+                </div>
+                <div class="row">
+                    <div class="modal-body col-12">
+                        <img src="assets/images/icons/giant-head.png" alt="Win">                    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Win Modal-->
+
+    <!--Audio-->
+    <div class="modal" tabindex="-1" role="dialog" id="audio-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Audio...</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <h5 class=" col-12 modal-sub-title">Music</h5>
+                        <ul>
+                            <li>
+                                <label for="music-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
+                                <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
+                            </li>                          
+                            <li class="audio-text">Turn the in-game music on/off: </li>
+                            <li>
+                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h5 class=" col-12 modal-sub-title">Sound-Effects</h5>
+                        <ul>
+                            <li>
+                                <label for="effects-volume-slider" class="audio-volume-label">Turn the in-game sound-effects up/down: </label>
+                                <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                            </li>                         
+                            <li class="audio-text">Turn the in-game sound-effects on/off: </li>
+                            <li>
+                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Audio-->
+
 
 <!--External Library-->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

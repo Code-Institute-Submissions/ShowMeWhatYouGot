@@ -1,39 +1,37 @@
 
-//--------------------------------------------------Music
+//--------------------------------------------------Variables
+
+let audio = {
+    menuAudio: new Audio('../../assets/audio/sound-effects/portal-gun.mp3'),
+    rickAudio: new Audio('../../assets/audio/sound-effects/wubalubadubdub.mp3'),
+    shuffleAudio: new Audio('../../assets/audio/sound-effects/show-me.mp3'),
+    meeseeksAudio: new Audio('../../assets/audio/sound-effects/meeseeks.mp3'),
+    swipeAudio: new Audio('../../assets/audio/sound-effects/swipe.mp3'),
+}
 
 //--------------------------------------------------Sound Effects
 
-
-//Menu
-//Portal in-game
-let menuAudio = new Audio('/assets/audio/sound-effects/portal-gun.mp3');
-
+//Menu - Portal Gun
 function menu() {
-    menuAudio.play();
+    audio.menuAudio.play();
 }
 
-
-//Play
-//Rick
-let rickAudio = new Audio('/assets/audio/sound-effects/wubalubadubdub.mp3');
-
+//Rick Game Select - Wubalubadubdub
 function wub() {
-    rickAudio.play();
+   audio.rickAudio.play();
 }
 
-
-//Shuffle
-let shuffleAudio = new Audio('/assets/audio/sound-effects/show-me.mp3');
-
+//Shuffle Game - Show Me What You Got
 function showMe() {
-    shuffleAudio.play();
+    audio.shuffleAudio.play();
 }
-
 
 //meeseeks box - how to play
-let meeseeksAudio = new Audio('/assets/audio/sound-effects/meeseeks.mp3');
-
 function howToPlay() {
-    meeseeksAudio.play();
+    audio.meeseeksAudio.play();
 }
 
+//Move Game - swipe
+function swipe() {
+    audio.swipeAudio.play();
+}
