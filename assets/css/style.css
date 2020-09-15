@@ -68,6 +68,10 @@ h1 {
 
 /*---------------------------------------------------Enter*/
 
+.container-enter {
+    margin-top: 40px;
+}
+
 /*Portal Gun*/
 .portal-gun {
     margin: 0 auto;
@@ -115,7 +119,7 @@ h1 {
 
 /*Button Group*/
 .btn-group-vertical {
-    top: 50px;
+    top: 80px;
     display: flex;
     grid-row-gap: 15px;
     margin: 0 auto;
@@ -324,7 +328,7 @@ ul {
 }
 
  .modal-footer .btn--close{
-    width: 200px;
+    width: 140px;
     height: 50px;
     background-color: #f50909f8;
     border: solid 3px #fff;
@@ -352,6 +356,31 @@ ul {
 }
 
 /*---------------------------------------------------/Audio Modal*/
+
+/*---------------------------------------------------Win Modal*/
+
+.win-body {
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.modal-footer .btn--bonus {
+    margin-left: 20px;
+    width: 140px;
+    height: 50px;
+    background-color: #f50909f8;
+    border: solid 3px #fff;
+    border-radius: 5px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.footer-win {
+    margin: 0 auto;
+    border-top: none;
+}
+
+/*---------------------------------------------------/Win Modal*/
 
 /*---------------------------------------------------Custom Slider - CSS Tricks*/
 
@@ -415,7 +444,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /*---------------------------------------------------/Custom Slider - CSS Tricks*/
 
-/*---------------------------------------------------Gameplay Grid*/
+/*---------------------------------------------------Gameplay Grid 3x3*/
 
 .container-game {
     width: 360px;
@@ -427,8 +456,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .btn--game {
-    margin-top: 
-    5px;
+    margin-top: 15px;
+    height: 40px;
+    width: 140px;
+    line-height: .8;
 }
 
 #table-3x3 {
@@ -453,6 +484,37 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile7-3x3 {background-position: left bottom;}
 .tile8-3x3 {background-position: center bottom;}
 .tile9-3x3 {background: white; cursor: default;}
+
+/*---------------------------------------------------Gameplay Grid 3x3*/
+
+/*---------------------------------------------------Gameplay Grid 3x3b*/
+
+#table-3x3b {
+    margin: 15px auto;
+}
+
+.tile1-3x3b, .tile2-3x3b, .tile3-3x3b, .tile4-3x3b, .tile5-3x3b, .tile6-3x3b, .tile7-3x3b, .tile8-3x3b, .tile9-3x3b {
+  display: table-cell;
+  width: 101px;
+  height: 99px;
+  border: 1px solid #1b810fd1;
+  background: url("../../assets/images/puzzles/bonus3x3.png"); 
+  cursor: pointer;
+}
+
+.tile1-3x3b {background-position: left top;}
+.tile2-3x3b {background-position: center top;}
+.tile3-3x3b {background-position: right top;}
+.tile4-3x3b {background-position: left center;}
+.tile5-3x3b {background-position: center center;}
+.tile6-3x3b {background-position: right center;}
+.tile7-3x3b {background-position: left bottom;}
+.tile8-3x3b {background-position: center bottom;}
+.tile9-3x3b {background: white; cursor: default;}
+
+/*---------------------------------------------------Gameplay Grid 3x3b*/
+
+/*---------------------------------------------------Gameplay Grid 4x4*/
 
 #table-4x4 {
     margin: 15px auto;
@@ -484,6 +546,8 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile15-4x4 {background-position: -160px -240px;}
 .tile16-4x4 {background: white; cursor: default;}
 
+/*---------------------------------------------------Gameplay Grid 4x4b*/
+
 #table-4x4b {
     margin: 15px auto;
 }
@@ -493,7 +557,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 80px;
   height: 80px;
   border: 1px solid #1b810fd1;
-  background: url("../../assets/images/puzzles/bonus.png"); 
+  background: url("../../assets/images/puzzles/bonus4x4.png"); 
   cursor: pointer;
 }
 
@@ -513,3 +577,5 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile14-4x4b {background-position: -80px -240px;}
 .tile15-4x4b {background-position: -160px -240px;}
 .tile16-4x4b {background: white; cursor: default;}
+
+/*---------------------------------------------------Gameplay Grid /4x4b*/

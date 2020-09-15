@@ -18,35 +18,34 @@ for (var row=1;row<=3;row++) { //For each row of the 3x3 grid
 } 
 }
 
-
 function clickTile(row,column) {
   var cell = document.getElementById("cell"+row+column);
   var tile = cell.className;
-  if (tile!="tile9-3x3") { 
+  if (tile!="tile9-3x3b") { 
        //Checking if white tile on the right
        if (column<3) {
-         if ( document.getElementById("cell"+row+(column+1)).className=="tile9-3x3") {
+         if ( document.getElementById("cell"+row+(column+1)).className=="tile9-3x3b") {
            swapTiles("cell"+row+column,"cell"+row+(column+1));
            return;
          }
        }
        //Checking if white tile on the left
        if (column>1) {
-         if ( document.getElementById("cell"+row+(column-1)).className=="tile9-3x3") {
+         if ( document.getElementById("cell"+row+(column-1)).className=="tile9-3x3b") {
            swapTiles("cell"+row+column,"cell"+row+(column-1));
            return;
          }
        }
          //Checking if white tile is above
        if (row>1) {
-         if ( document.getElementById("cell"+(row-1)+column).className=="tile9-3x3") {
+         if ( document.getElementById("cell"+(row-1)+column).className=="tile9-3x3b") {
            swapTiles("cell"+row+column,"cell"+(row-1)+column);
            return;
          }
        }
        //Checking if white tile is below
        if (row<4) {
-         if ( document.getElementById("cell"+(row+1)+column).className=="tile9-3x3") {
+         if ( document.getElementById("cell"+(row+1)+column).className=="tile9-3x3b") {
            swapTiles("cell"+row+column,"cell"+(row+1)+column);
            return;
          }
@@ -55,13 +54,15 @@ function clickTile(row,column) {
   
 }
 
+
+
 //Completing the puzzle
 function checkWin() {
     //Checks if all tiles are aligned in row 1
     var row1 = document.getElementById("row1");
     for(var i=0; i<row1.children.length;i++) {
         var n = i+1;
-        if(row1.children[i].className!="tile"+n.toString()+"-3x3") {
+        if(row1.children[i].className!="tile"+n.toString()+"-3x3b") {
             return false;
         }
     }
@@ -69,7 +70,7 @@ function checkWin() {
     var row2 = document.getElementById ("row2");
     for(var i=0; i<row2.children.length;i++) {
         var n = i+4;
-        if(row2.children[i].className!="tile"+n.toString()+"-3x3") {
+        if(row2.children[i].className!="tile"+n.toString()+"-3x3b") {
             return false;
         }
     }
@@ -77,7 +78,7 @@ function checkWin() {
     var row3 = document.getElementById ("row3");
     for(var i=0; i<row3.children.length;i++) {
         var n = i+7;
-        if(row3.children[i].className!="tile"+n.toString()+"-3x3") {
+        if(row3.children[i].className!="tile"+n.toString()+"-3x3b") {
             return false;
         }
     }
@@ -89,6 +90,5 @@ function checkWin() {
     $('#win-modal').modal('show');
     audio.rickAudio.play();
 }
-
 
 

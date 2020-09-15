@@ -17,34 +17,57 @@
 </head>
 <body>
 <!--Background-->
-<div class="background-home">
+<div class="background-bonus">
 <!--Header-->
-<div class="container-fluid container-header">
+    <div class="container-fluid container-header">
         <div class="row justify-content-center">
-            <a href="index.html"><img src="assets/images/icons/logo.png" class="col-12 logo" alt="logo"></a>
-        </div>
-        <div class="row justify-content-center">
-            <h1 class="title col-12">Show Me What You Got!</h1>
+            <a href="menu.html"><img src="assets/images/icons/logo.png" class="col-12 logo" alt="logo"></a>
         </div>
     </div>
 <!--/Header-->
 
-<!--Menu Section-->
-    <div class="container-fluid container-menu">
-        <div class="row">
-            <div class="btn-group-vertical ">
-                <button type="button" class="btn btn--play" data-toggle="modal" data-target="#play-modal" onclick="menu();">Play</button>
-                <button type="button" class="btn btn--how-to-play" data-toggle="modal" data-target="#how-to-play-modal" onclick="menu();">How to Play</button>
-                <button type="button" class="btn btn--audio" data-toggle="modal" data-target="#audio-modal" onclick="menu();">Audio</button>
+<!--Gampeplay-->
+    <div class="container container-game">
+        <div id="table-3x3b" style="display: table;">
+            <div id="row1" style="display: table-row;">
+                <div id="cell11" class="tile1-3x3b" onclick="clickTile(1,1);swipe();"></div>
+                <div id="cell12" class="tile2-3x3b" onclick="clickTile(1,2);swipe();"></div>
+                <div id="cell13" class="tile3-3x3b" onclick="clickTile(1,3);swipe();"></div>
+            </div>
+            <div id="row2" style="display: table-row;">
+                <div id="cell21" class="tile4-3x3b" onclick="clickTile(2,1);swipe();"></div>
+                <div id="cell22" class="tile5-3x3b" onclick="clickTile(2,2);swipe();"></div>
+                <div id="cell23" class="tile6-3x3b" onclick="clickTile(2,3);swipe();"></div>
+            </div>
+                <div id="row3" style="display: table-row;">
+                <div id="cell31" class="tile7-3x3b" onclick="clickTile(3,1);swipe();"></div>
+                <div id="cell32" class="tile8-3x3b" onclick="clickTile(3,2);swipe();"></div>
+                <div id="cell33" class="tile9-3x3b" onclick="clickTile(3,3);swipe();"></div>
             </div>
         </div>
+        <button  class="btn btn--game" onclick="shuffle();showMe();">Shuffle</button>
+        <nav class="navbar">
+            <ul class="list-inline nav-links">
+                <li class="list-inline-item">
+                    <a href="menu.html">
+						<img src="assets/images/icons/portal-icon.png" alt="Menu" onclick="menu();">
+					</a>
+                </li>
+                <li class="list-inline-item">
+                    <img src="assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
+                </li>
+                <li class="list-inline-item">
+                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
+                </li>
+            </ul>
+        </nav>     
     </div>
-<!--/Menu Section-->
+<!--/Gameplay-->
 
 <!--Footer-->
     <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-12">
+            <div class="col-12 d-none">
                 <h5 class="footer-header"><i class="fa fa-copyright" aria-hidden="true"></i> Steven Nicholson</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
@@ -71,49 +94,6 @@
     </footer>
 <!--/Footer-->
 
-<!--Play Modal-->
-<div class="modal" tabindex="-1" role="dialog" id="play-modal">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="opaque-overlay">&nbsp;</div>
-                <div class="modal-header">
-                    <h5 class="modal-title">Let's Play!</h5>
-                </div>
-                <div class="modal-body">
-                    <h5 class="modal-sub-title">Rick</h5>
-                    <div class="row">
-                        <ul>
-                            <li>You're the smartest man in the universe, this is going to be <em>EASY!</em></li>
-                            <li>
-                                <a href="rick-game.html"><img src="assets/images/icons/rick-head-play.png" class="shake-slow shake-constant rick-play" alt="Play-Rick" onclick="wub();"></a>
-                            </li>
-                            <li>
-                                <a href="rick-game.html" class="btn btn--play-sm rick-play">Play</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <h5 class="modal-sub-title">Morty</h5>
-                    <div class="row">
-                        <ul>
-                            <li>This is <em>HARD</em>, maybe you should just give up and watch Interdimensional cable!</li>
-                            <li>
-                                <a href="morty-game.html"><img src="assets/images/icons/morty-head-play.png" class="shake-rotate shake-constant morty-play" alt="Play-Rick"></a>
-                            </li>
-                            <li>
-                                <a href="morty-game.html" class="btn btn--play-sm">Play</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--/Play Modal-->
-
 <!--How to Play Modal-->
     <div class="modal" tabindex="-1" role="dialog" id="how-to-play-modal">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -124,28 +104,17 @@
                 </div>
                 <div class="modal-body">
                     <ol>
-                        <li>Press 'play' to start the game</li>
-                        <li>Select your difficulty level...
-                            <div class="row">
-                                <div class="col-12 htp-player-select">
-                                    <img src="assets/images/icons/rick-head-play.png" class="col-6 tiny-rick" alt="tiny-rick">
-                                    <p class="rick-text">Rick<br>(3x3)</p>
-                                    <img src="assets/images/icons/morty-head-play.png" class="col-6 tiny-morty" alt="tiny-morty">                                    
-                                    <p class="morty-text">Morty<br>(4x4)</p>
-                                </div>
-                            </div>
-                        </li>
                         <li>Take a good look at the image, remember what it looks like.</li>
                         <li>Click 'shuffle' to scramble the image.</li>
-                        <li>Tap to move the tiles and unscramble the puzzle.</li>
-                        <li>Complete the puzzle to unlock the bonus.</li>
-                        <li>Complete the bonus puzzle to 'Get Schwifty!'.</li>
+                        <li>Move the tiles to unscramble the picture and complete the puzzle.</li>
+                        <li>Complete all the puzzles to unlock the bonus puzzle.</li>
+                        <li>Complete the bonus puzzle to win the game.</li>
                     </ol>
                     <div class="row">
                         <h5 class="col-12 modal-sub-title">In-game</h5>
                             <ul>
                                 <li>Click 'shuffle' at any time to reset the puzzle.</li>
-                                <li>Click on the portal <img src="assets/images/icons/portal-icon.png" alt="Portal Icon"> at any time to return to the menu screen.</li>
+                                <li>Click on the portal <img src="assets/images/icons/portal-icon.png" alt="Portal Icon"> to return to the menu screen.</li>
                                 <li>If you can't remember what to do, click on the meeseeks box <img src="assets/images/icons/meeseeks-box.png" alt="Portal Icon"> for a helpful reminder.</li>
                                 <li>Click on the musical notes <img src="assets/images/icons/notes.png" alt="Audio"> to adjust, or turn on/off the in-game audio.</li>
                             </ul>
@@ -158,6 +127,29 @@
         </div>
     </div>
     <!--/How to Play Modal-->
+
+    <!--Win Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="win-modal">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Wubalubadubdub!</h5>
+                </div>
+                <div class="row">
+                    <div class="modal-body win-body col-12">
+                        <img src="assets/images/icons/win-portal.png" alt="Win">                    
+                    </div>
+                </div>
+                <div class="modal-footer footer-win">
+                    <div>  
+                        <a href="menu.html" class="btn btn--bonus">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Win Modal-->
 
     <!--Audio-->
     <div class="modal" tabindex="-1" role="dialog" id="audio-modal">
@@ -181,6 +173,7 @@
                             </li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="row">
                         <h5 class=" col-12 modal-sub-title">Sound-Effects</h5>
                         <ul>
@@ -203,16 +196,19 @@
     </div>
     <!--/Audio-->
 
-<!--/Background--> 
-</div>
+
 <!--External Library-->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--/External Library-->
 
 <!--Local Library-->
 <script src="assets/javascript/audio.js" crossorigin="anonymous"></script>
+<script src="assets/javascript/bonus-rick.js" crossorigin="anonymous"></script>
 <!--/Local Library-->
+
+<!--/Background--> 
+</div>
 </body>
 </html>

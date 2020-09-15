@@ -16,10 +16,8 @@ function menu() {
     audio.menuAudio.play();
 }
 
-//Rick Game Select - Wubalubadubdub
-function wub() {
-   audio.rickAudio.play();
-}
+//Modal Win - Wubalubadubdub
+
 
 //Shuffle Game - Show Me What You Got
 function showMe() {

@@ -54,3 +54,46 @@ function clickTile(row,column) {
   }
   
 }
+
+//Completing the puzzle
+function checkWin() {
+    //Checks if all tiles are aligned in row 1
+    var row1 = document.getElementById("row1");
+    for(var i=0; i<row1.children.length;i++) {
+        var n = i+1;
+        if(row1.children[i].className!="tile"+n.toString()+"-4x4") {
+            return false;
+        }
+    }
+    //Checks if all tiles are aligned in row 2
+    var row2 = document.getElementById ("row2");
+    for(var i=0; i<row2.children.length;i++) {
+        var n = i+5;
+        if(row2.children[i].className!="tile"+n.toString()+"-4x4") {
+            return false;
+        }
+    }
+    //Checks if all tiles are aligned in row 3
+    var row3 = document.getElementById ("row3");
+    for(var i=0; i<row3.children.length;i++) {
+        var n = i+9;
+        if(row3.children[i].className!="tile"+n.toString()+"-4x4") {
+            return false;
+        }
+    }
+    //Checks if all tiles are aligned in row 4
+    var row3 = document.getElementById ("row4");
+    for(var i=0; i<row4.children.length;i++) {
+        var n = i+13;
+        if(row3.children[i].className!="tile"+n.toString()+"-4x4") {
+            return false;
+        }
+    }
+    return true;
+}
+
+    var win = checkWin();
+    if (win == checkWin()) {
+    $('#win-modal').modal('show');
+    audio.rickAudio.play();
+}
