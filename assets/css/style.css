@@ -92,7 +92,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 30px;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 /*Button Hover*/
@@ -361,7 +361,13 @@ ul {
 
 .win-body {
     text-align: center;
-    margin: 35px 0px;
+    margin: 0 auto;
+}
+
+.win-text-rick {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .modal-footer .btn--bonus {
@@ -501,6 +507,7 @@ input[type=range]::-webkit-slider-runnable-track {
   background: url("../../assets/images/puzzles/bonus3x3.png"); 
   cursor: pointer;
 }
+
 
 .tile1-3x3b {background-position: left top;}
 .tile2-3x3b {background-position: center top;}
