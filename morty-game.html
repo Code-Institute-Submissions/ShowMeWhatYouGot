@@ -55,6 +55,7 @@
             </div>
         </div>
         <button  class="btn btn--game" onclick="shuffle();">Shuffle</button>
+        <audio src="assets/audio/music/game-music.mp3" id="game-music"></audio>
         <nav class="navbar">
             <ul class="list-inline nav-links">
                 <li class="list-inline-item">
@@ -147,7 +148,10 @@
                 </div>
                 <div class="row">
                     <div class="modal-body win-body col-12">
-                        <img src="assets/images/icons/win-portal.png" alt="Win">                    
+                        <p class="win-text-rick">Hey, you solved the puzzle!</p>
+                        <img src="assets/images/icons/win-portal.png" alt="Win">
+                        <p class="win-text-rick">Looks like you're not a total Jerry after all!</p>
+                        <p class="win-text-rick">Why not try the bonus puzzle?</p>
                     </div>
                 </div>
                 <div class="modal-footer footer-win">
