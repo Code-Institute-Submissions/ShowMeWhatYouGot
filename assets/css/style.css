@@ -57,7 +57,7 @@ body {
 h1 {
     font-family: "Gloria Hallelujah", cursive;
     color: #000;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 700;
     text-align: center;
     padding-top: 20px;
@@ -69,7 +69,7 @@ h1 {
 /*---------------------------------------------------Enter*/
 
 .container-enter {
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 /*Portal Gun*/
@@ -119,7 +119,7 @@ h1 {
 
 /*Button Group*/
 .btn-group-vertical {
-    top: 80px;
+    top: 35px;
     display: flex;
     grid-row-gap: 15px;
     margin: 0 auto;
@@ -210,7 +210,12 @@ ul {
     text-align: center;
 }
 
+li .play-img {
+    margin-bottom: 20px;
+}
+
 .btn--play-sm {
+    width: 120px;
     font-family: "Dokdo",cursive;
     line-height: 1.2;
 }

@@ -2,12 +2,12 @@
 //--------------------------------------------------Variables
 
 let audio = {
-    menuAudio: new Audio('assets/audio/sound-effects/portal-gun.mp3'),
-    rickAudio: new Audio('assets/audio/sound-effects/wubalubadubdub.mp3'),
-    bonusWinAudio: new Audio('assets/audio/sound-effects/no-god.mp3'),
-    shuffleAudio: new Audio('assets/audio/sound-effects/show-me.mp3'),
-    meeseeksAudio: new Audio('assets/audio/sound-effects/meeseeks.mp3'),
-    swipeAudio: new Audio('assets/audio/sound-effects/swipe.mp3'),
+    menuAudio: new Audio('../assets/audio/sound-effects/portal-gun.mp3'),
+    rickAudio: new Audio('../assets/audio/sound-effects/wubalubadubdub.mp3'),
+    bonusWinAudio: new Audio('../assets/audio/sound-effects/no-god.mp3'),
+    shuffleAudio: new Audio('../assets/audio/sound-effects/show-me.mp3'),
+    meeseeksAudio: new Audio('../assets/audio/sound-effects/meeseeks.mp3'),
+    swipeAudio: new Audio('../assets/audio/sound-effects/swipe.mp3'),
     gameMusic: document.getElementById('game-music'),
 }
 
