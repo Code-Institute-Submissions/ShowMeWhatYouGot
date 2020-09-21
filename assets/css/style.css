@@ -227,6 +227,7 @@ li .play-img {
 /*Modal Background*/
 .modal-content {
     background: url("../../assets/images/backgrounds/portal.png") no-repeat center center;
+    background-size: cover;
     height: 100vh;
     border: 3px solid #fff;
 }
@@ -243,7 +244,6 @@ li .play-img {
 .modal-header {
     z-index: 1;
     font-family: "Gloria Hallelujah", cursive;
-    border: none;
     border-bottom: solid 1px;
     color: #fff;
 }
@@ -271,7 +271,7 @@ li .play-img {
 .modal-body li {
     z-index: 1;
     font-family: "Gloria Hallelujah", cursive;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 300;
@@ -319,7 +319,6 @@ li .play-img {
 /*Modal Footer*/
 .modal-footer {
     height: 75px;
-    border: none;
     border-top: solid 1px;
     color: #fff;
     z-index: 1;
@@ -333,7 +332,7 @@ li .play-img {
 }
 
  .modal-footer .btn--close{
-    width: 140px;
+    width: 110px;
     height: 50px;
     background-color: #f50909f8;
     border: solid 3px #fff;
@@ -367,6 +366,8 @@ li .play-img {
 .win-body {
     text-align: center;
     margin: 0 auto;
+    border-bottom: 1px solid;
+    color: #fff;
 }
 
 .win-text-rick {
@@ -377,7 +378,7 @@ li .play-img {
 
 .modal-footer .btn--bonus {
     margin-left: 20px;
-    width: 140px;
+    width: 110px;
     height: 50px;
     background-color: #f50909f8;
     border: solid 3px #fff;
@@ -388,7 +389,8 @@ li .play-img {
 
 .footer-win {
     margin: 0 auto;
-    border-top: none;
+    border: none;
+    padding-top: 8px;
 }
 
 /*---------------------------------------------------/Win Modal*/
@@ -458,9 +460,9 @@ input[type=range]::-webkit-slider-runnable-track {
 /*---------------------------------------------------Gameplay Grid 3x3*/
 
 .container-game {
-    width: 360px;
-    height:485px;
-    margin-top: 20px ;
+    width: 300px;
+    height:410px;
+    margin-top: 13px ;
     background: #1b810fd1;
     border: 5px solid #fff;
     border-radius: 15px;
@@ -479,8 +481,8 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tile1-3x3, .tile2-3x3, .tile3-3x3, .tile4-3x3, .tile5-3x3, .tile6-3x3, .tile7-3x3, .tile8-3x3, .tile9-3x3 {
   display: table-cell;
-  width: 101px;
-  height: 99px;
+  width: 84px;
+  height: 84px;
   border: 1px solid #1b810fd1;
   background: url("../../assets/images/puzzles/vat-of-acid.png"); 
   cursor: pointer;
@@ -496,6 +498,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile8-3x3 {background-position: center bottom;}
 .tile9-3x3 {background: white; cursor: default;}
 
+.navbar {
+    padding: 0px;
+}
+
 /*---------------------------------------------------Gameplay Grid 3x3*/
 
 /*---------------------------------------------------Gameplay Grid 3x3b*/
@@ -506,8 +512,8 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tile1-3x3b, .tile2-3x3b, .tile3-3x3b, .tile4-3x3b, .tile5-3x3b, .tile6-3x3b, .tile7-3x3b, .tile8-3x3b, .tile9-3x3b {
   display: table-cell;
-  width: 101px;
-  height: 99px;
+  width: 84px;
+  height: 84px;
   border: 1px solid #1b810fd1;
   background: url("../../assets/images/puzzles/bonus3x3.png"); 
   cursor: pointer;
