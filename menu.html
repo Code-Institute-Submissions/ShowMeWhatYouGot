@@ -145,7 +145,7 @@
                         <h5 class="col-12 modal-sub-title">In-game</h5>
                             <ul>
                                 <li>Click 'shuffle' at any time to reset the puzzle.</li>
-                                <li>Click on the portal <img src="assets/images/icons/portal-icon.png" alt="Portal Icon"> at any time to return to the menu screen.</li>
+                                <li>Click on the portal <img src="assets/images/icons/menu-icon.png" alt="Portal Icon"> at any time to return to the menu screen.</li>
                                 <li>If you can't remember what to do, click on the meeseeks box <img src="assets/images/icons/meeseeks-box.png" alt="Portal Icon"> for a helpful reminder.</li>
                                 <li>Click on the musical notes <img src="assets/images/icons/notes.png" alt="Audio"> to adjust, or turn on/off the in-game audio.</li>
                             </ul>
@@ -173,11 +173,11 @@
                         <ul>
                             <li>
                                 <label for="music-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
-                                <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
+                                <input type="range" value="80" min="0" max="100" step="1" id="music-volume-slider" class="slider" name="music-volume"> 
                             </li>                          
                             <li class="audio-text">Turn the in-game music on/off: </li>
                             <li>
-                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true">On</button>
+                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff()">On</button>
                             </li>
                         </ul>
                     </div>
@@ -186,7 +186,7 @@
                         <ul>
                             <li>
                                 <label for="effects-volume-slider" class="audio-volume-label">Turn the in-game sound-effects up/down: </label>
-                                <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                                <input type="range" value="80" min="0" max="100" step="1" id="effects-volume-slider" class="slider" name="effects-volume"> 
                             </li>                         
                             <li class="audio-text">Turn the in-game sound-effects on/off: </li>
                             <li>

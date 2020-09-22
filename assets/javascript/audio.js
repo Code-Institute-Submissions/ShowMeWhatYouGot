@@ -2,25 +2,18 @@
 //--------------------------------------------------Variables
 
 let audio = {
-    menuAudio: new Audio('../assets/audio/sound-effects/portal-gun.mp3'),
-    rickAudio: new Audio('../assets/audio/sound-effects/wubalubadubdub.mp3'),
-    bonusWinAudio: new Audio('../assets/audio/sound-effects/no-god.mp3'),
-    shuffleAudio: new Audio('../assets/audio/sound-effects/show-me.mp3'),
-    meeseeksAudio: new Audio('../assets/audio/sound-effects/meeseeks.mp3'),
-    swipeAudio: new Audio('../assets/audio/sound-effects/swipe.mp3'),
+    menuAudio: new Audio('assets/audio/sound-effects/portal-gun.mp3'),
+    inGameAudio: new Audio('assets/audio/sound-effects/can-do.mp3'),
+    rickAudio: new Audio('assets/audio/sound-effects/wubalubadubdub.mp3'),
+    bonusWinAudio: new Audio('assets/audio/sound-effects/no-god.mp3'),
+    shuffleAudio: new Audio('assets/audio/sound-effects/show-me.mp3'),
+    meeseeksAudio: new Audio('assets/audio/sound-effects/meeseeks.mp3'),
+    swipeAudio: new Audio('assets/audio/sound-effects/swipe.mp3'),
+    themeMusic: document.getElementById('theme-music'),
     gameMusic: document.getElementById('game-music'),
+    musicBtn: document.getElementById('music-btn'),
+    isMusicMuted: false,
 }
-
-//--------------------------------------------------Default Volume Settings
-
-/*function defaultVolume() {
-    audio.gameMusic.volume = audio.musicVolumeSlider.defaultValue / 100;
-    audio.rickAudio.volume = audio.effectsVolumeSlider.defaultValue / 100;
-    audio.bonusWinAudio.volume = audio.effectsVolumeSlider.defaultValue / 100;
-    audio.shuffleAudio.volume = audio.effectsVolumeSlider.defaultValue / 100;
-    audio.meeseeksAudio.volume = audio.effectsVolumeSlider.defaultValue / 100;
-    audio.swipeAudio.volume = audio.effectsVolumeSlider.defaultValue / 100;
-}*/
 
 
 //--------------------------------------------------Sound Effects Functions
@@ -43,6 +36,13 @@ function showMe() {
 //meeseeks box - how to play
 function howToPlay() {
     audio.meeseeksAudio.play();
+    audio.gameMusic.pause();
+}
+
+//notes - audio menu
+function canDo() {
+    audio.inGameAudio.play();
+    audio.gameMusic.pause();
 }
 
 //Move Game - swipe
@@ -52,8 +52,40 @@ function swipe() {
 
 //--------------------------------------------------Music Functions
 window.onload = function() {
+    document.getElementById("theme-music").play();
+    audio.themeMusic.loop = true;
+    audio.themeMusic.volume = 0.7;
+}
+
+window.onload = function() {
     document.getElementById("game-music").play();
     audio.gameMusic.loop = true;
+    audio.gameMusic.volume = 0.7;
+}
+
+function music() {
+    audio.gameMusic.play();
 }
 
 
+//--------------------------------------------------Volume Sliders
+let musicVolumeSlider = document.querySelector('#music-volume-slider');
+musicVolumeSlider.addEventListener('input', () => {
+    audio.themeMusic.volume = musicVolumeSlider.valueAsNumber / 100;
+});
+
+
+//--------------------------------------------------On Off Buttons
+
+function musicOnOff() {
+    if (audio.isMusicMuted === true) {
+        audio.isMusicMuted = false;
+        audio.musicBtn.innerHTML = "On";
+        audio.themeMusic.play();
+        audio.gameMusic.play();
+    } else if (audio.isMusicMuted === false)
+        audio.isMusicMuted = true;
+        audio.musicBtn.innerHTML = "Off";
+        audio.themeMusic.pause();
+        audio.gameMusic.pause();
+    }    
