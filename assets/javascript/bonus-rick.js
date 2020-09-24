@@ -1,3 +1,9 @@
+window.onload = function() {
+    document.getElementById("game-music").play();
+    audio.gameMusic.loop = true;
+    audio.gameMusic.volume = 0.7;
+}
+
 function swapTiles(cell1, cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;

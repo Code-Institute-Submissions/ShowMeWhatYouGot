@@ -12,7 +12,9 @@ let audio = {
     themeMusic: document.getElementById('theme-music'),
     gameMusic: document.getElementById('game-music'),
     musicBtn: document.getElementById('music-btn'),
+    effectsBtn: document.getElementById('effects-btn'),
     isMusicMuted: false,
+    isEffectsMuted: false,
 }
 
 
@@ -20,7 +22,7 @@ let audio = {
 
 //Menu - Portal Gun
 function menu() {
-    audio.menuAudio.play();
+    audio.menuAudio.play(); 
 }
 
 //Modal Win - Bonus Win
@@ -50,20 +52,17 @@ function swipe() {
     audio.swipeAudio.play();
 }
 
+
 //--------------------------------------------------Music Functions
 window.onload = function() {
     document.getElementById("theme-music").play();
     audio.themeMusic.loop = true;
-    audio.themeMusic.volume = 0.7;
+    audio.themeMusic.volume = 0.4;  
 }
 
-window.onload = function() {
-    document.getElementById("game-music").play();
-    audio.gameMusic.loop = true;
-    audio.gameMusic.volume = 0.7;
-}
+//In-game Music located on relevant .js page due to one .onload function per page.
 
-function music() {
+function gMusic() {
     audio.gameMusic.play();
 }
 
@@ -89,3 +88,16 @@ function musicOnOff() {
         audio.themeMusic.pause();
         audio.gameMusic.pause();
     }    
+
+function effectsOnOff() {
+    if (audio.isEffectsMuted === true) {
+        audio.isEffectsMuted = false;
+        audio.effectsBtn.innerHTML = "On";
+        audio.menuAudio.play();
+    } else if (audio.isEffectsMuted === false)
+        audio.isEffectsMuted = true;
+        audio.effectsBtn.innerHTML = "Off";
+        audio.menuAudio.muted();
+        console.log(effectsOnOff());
+}
+

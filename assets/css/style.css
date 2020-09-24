@@ -386,6 +386,16 @@ li .play-img {
     font-weight: 600;
 }
 
+.modal-footer .btn--home {
+    margin-left: 20px;
+    width: 110px;
+    height: 50px;
+    background-color: #f50909f8;
+    border: solid 3px #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
 .footer-win {
     margin: 0 auto;
     border: none;
@@ -539,28 +549,28 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tile1-4x4, .tile2-4x4, .tile3-4x4, .tile4-4x4, .tile5-4x4, .tile6-4x4, .tile7-4x4, .tile8-4x4, .tile9-4x4, .tile10-4x4, .tile11-4x4, .tile12-4x4, .tile13-4x4, .tile14-4x4, .tile15-4x4, .tile16-4x4 {
   display: table-cell;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border: 1px solid #1b810fd1;
   background: url("../../assets/images/puzzles/evil-morty.png"); 
   cursor: pointer;
 }
 
 .tile1-4x4 {background-position: 0px 0px;}
-.tile2-4x4 {background-position: -80px 0px;}
-.tile3-4x4 {background-position: -160px 0px;}
-.tile4-4x4 {background-position: -240px 0px;}
-.tile5-4x4 {background-position: 0px -80px;}
-.tile6-4x4 {background-position: -80px -80px;}
-.tile7-4x4 {background-position: -160px -80px;}
-.tile8-4x4 {background-position: -240px -80px;}
-.tile9-4x4 {background-position: 0px -160px;}
-.tile10-4x4 {background-position: -80px -160px;}
-.tile11-4x4 {background-position: -160px -160px;}
-.tile12-4x4 {background-position: -240px -160px;}
-.tile13-4x4 {background-position: 0px -240px;}
-.tile14-4x4 {background-position: -80px -240px;}
-.tile15-4x4 {background-position: -160px -240px;}
+.tile2-4x4 {background-position: -65px 0px;}
+.tile3-4x4 {background-position: -130px 0px;}
+.tile4-4x4 {background-position: -195px 0px;}
+.tile5-4x4 {background-position: 0px -65px;}
+.tile6-4x4 {background-position: -65px -65px;}
+.tile7-4x4 {background-position: -130px -65px;}
+.tile8-4x4 {background-position: -195px -65px;}
+.tile9-4x4 {background-position: 0px -130px;}
+.tile10-4x4 {background-position: -65px -130px;}
+.tile11-4x4 {background-position: -130px -130px;}
+.tile12-4x4 {background-position: -195px -130px;}
+.tile13-4x4 {background-position: 0px -195px;}
+.tile14-4x4 {background-position: -65px -195px;}
+.tile15-4x4 {background-position: -130px -195px;}
 .tile16-4x4 {background: white; cursor: default;}
 
 /*---------------------------------------------------/Gameplay Grid 4x4*/
@@ -573,28 +583,28 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tile1-4x4b, .tile2-4x4b, .tile3-4x4b, .tile4-4x4b, .tile5-4x4b, .tile6-4x4b, .tile7-4x4b, .tile8-4x4b, .tile9-4x4b, .tile10-4x4b, .tile11-4x4b, .tile12-4x4b, .tile13-4x4b, .tile14-4x4b, .tile15-4x4b, .tile16-4x4b {
   display: table-cell;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border: 1px solid #1b810fd1;
   background: url("../../assets/images/puzzles/bonus4x4.png"); 
   cursor: pointer;
 }
 
 .tile1-4x4b {background-position: 0px 0px;}
-.tile2-4x4b {background-position: -80px 0px;}
-.tile3-4x4b {background-position: -160px 0px;}
-.tile4-4x4b {background-position: -240px 0px;}
-.tile5-4x4b {background-position: 0px -80px;}
-.tile6-4x4b {background-position: -80px -80px;}
-.tile7-4x4b {background-position: -160px -80px;}
-.tile8-4x4b {background-position: -240px -80px;}
-.tile9-4x4b {background-position: 0px -160px;}
-.tile10-4x4b {background-position: -80px -160px;}
-.tile11-4x4b {background-position: -160px -160px;}
-.tile12-4x4b {background-position: -240px -160px;}
-.tile13-4x4b {background-position: 0px -240px;}
-.tile14-4x4b {background-position: -80px -240px;}
-.tile15-4x4b {background-position: -160px -240px;}
+.tile2-4x4b {background-position: -65px 0px;}
+.tile3-4x4b {background-position: -130px 0px;}
+.tile4-4x4b {background-position: -195px 0px;}
+.tile5-4x4b {background-position: 0px -65px;}
+.tile6-4x4b {background-position: -65px -65px;}
+.tile7-4x4b {background-position: -130px -65px;}
+.tile8-4x4b {background-position: -195px -65px;}
+.tile9-4x4b {background-position: 0px -130px;}
+.tile10-4x4b {background-position: -65px -130px;}
+.tile11-4x4b {background-position: -130px -130px;}
+.tile12-4x4b {background-position: -195px -130px;}
+.tile13-4x4b {background-position: 0px -195px;}
+.tile14-4x4b {background-position: -65px -195px;}
+.tile15-4x4b {background-position: -130px -195px;}
 .tile16-4x4b {background: white; cursor: default;}
 
 /*---------------------------------------------------/Gameplay Grid 4x4b*/

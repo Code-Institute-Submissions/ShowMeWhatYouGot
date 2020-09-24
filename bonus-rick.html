@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!--External Library-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
@@ -58,7 +59,7 @@
                     <img src="assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
                 </li>
                 <li class="list-inline-item">
-                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
+                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio" onclick="canDo();">
                 </li>
             </ul>
         </nav>     
@@ -115,14 +116,14 @@
                         <h5 class="col-12 modal-sub-title">In-game</h5>
                             <ul>
                                 <li>Click 'shuffle' at any time to reset the puzzle.</li>
-                                <li>Click on the portal <img src="assets/images/icons/portal-icon.png" alt="Portal Icon"> to return to the menu screen.</li>
+                                <li>Click on the portal <img src="assets/images/icons/menu-icon.png" alt="Portal Icon"> to return to the menu screen.</li>
                                 <li>If you can't remember what to do, click on the meeseeks box <img src="assets/images/icons/meeseeks-box.png" alt="Portal Icon"> for a helpful reminder.</li>
                                 <li>Click on the musical notes <img src="assets/images/icons/notes.png" alt="Audio"> to adjust, or turn on/off the in-game audio.</li>
                             </ul>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal" onclick="gMusic();">Close</button>
                 </div>
             </div>
         </div>
@@ -143,7 +144,9 @@
                         <p class="win-text-rick">Have fun with empowerment. It seems to make everyone that gets it really happy.</p>
                 </div>
                 <div class="modal-footer footer-win">
-                    <button type="button" class="close btn btn--bonus" data-dismiss="modal">Home</button>
+                    <div>  
+                        <a href="menu.html" class="btn btn--home">Home</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,7 +171,7 @@
                             </li>                          
                             <li class="audio-text">Turn the in-game music on/off: </li>
                             <li>
-                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff();">On</button>
                             </li>
                         </ul>
                     </div>
@@ -188,7 +191,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal" onclick="gMusic();">Close</button>
                 </div>
             </div>
         </div>

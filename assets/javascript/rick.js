@@ -1,3 +1,9 @@
+window.onload = function() {
+    document.getElementById("game-music").play();
+    audio.gameMusic.loop = true;
+    audio.gameMusic.volume = 0.4;
+}
+
 function swapTiles(cell1, cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
@@ -21,7 +27,6 @@ for (var row = 1; row <= 3; row ++) { //For each row of the 3x3 grid
   } 
 } 
 }
-
 
 function clickTile(row, column) {
   var cell = document.getElementById("cell" + row + column);

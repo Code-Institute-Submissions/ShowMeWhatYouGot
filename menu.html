@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!--External Library-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
@@ -173,11 +174,11 @@
                         <ul>
                             <li>
                                 <label for="music-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
-                                <input type="range" value="80" min="0" max="100" step="1" id="music-volume-slider" class="slider" name="music-volume"> 
+                                <input type="range" value="40" min="0" max="100" step="1" id="music-volume-slider" class="slider" name="music-volume"> 
                             </li>                          
                             <li class="audio-text">Turn the in-game music on/off: </li>
                             <li>
-                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff()">On</button>
+                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff();">On</button>
                             </li>
                         </ul>
                     </div>
@@ -190,7 +191,7 @@
                             </li>                         
                             <li class="audio-text">Turn the in-game sound-effects on/off: </li>
                             <li>
-                                <button type="button" id="effects-btn" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                                <button type="button" id="effects-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="effectsOnOff();">On</button>
                             </li>
                         </ul>
                     </div>

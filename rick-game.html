@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!--External Library-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
@@ -58,7 +59,7 @@
                     <img src="assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
                 </li>
                 <li class="list-inline-item">
-                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio" onclick="canDo();">
+                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
                 </li>
             </ul>
         </nav>     
@@ -122,7 +123,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" onclick="music();" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" onclick="gMusic();" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -171,8 +172,8 @@
                                 <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
                             </li>                          
                             <li class="audio-text">Turn the in-game music on/off: </li>
-                            <li>
-                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                        <li>
+                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff()">On</button>
                             </li>
                         </ul>
                     </div>
@@ -192,7 +193,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" onclick="music();" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" onclick="gMusic();" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
