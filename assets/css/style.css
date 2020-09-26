@@ -55,8 +55,7 @@ html, body {
 
 /*logo*/
 .container-header img {
-    display: flex;
-    padding-top: 25px;
+    /*display: flex;*/
 }
 
 /*title*/
@@ -125,10 +124,10 @@ h1 {
 
 /*Button Group*/
 .btn-group-vertical {
-    top: 35px;
+    top: 45px;
+    margin: 0 auto; /*adjust this at every @media and remove once complete*/
     display: flex;
     grid-row-gap: 15px;
-    margin: 0 auto;
     justify-content: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -173,8 +172,9 @@ button .btn--play {
 /*---------------------------------------------------Footer*/
 
 /*Footer*/
-footer {
+.container-footer {
     text-align: center;
+    height: 65px;
 }
 
 
@@ -184,6 +184,7 @@ footer {
     font-family: "Gloria Hallelujah", cursive;
     letter-spacing: 1px;
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 /*Social Icons*/
@@ -195,6 +196,7 @@ ul {
 .list-inline-item a {
     color: #000;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 /*---------------------------------------------------/Footer*/
@@ -475,7 +477,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .container-game {
     width: 300px;
-    height:410px;
+    height:420px;
     margin-top: 13px ;
     background: #1b810fd1;
     border: 5px solid #fff;
@@ -513,7 +515,14 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile9-3x3 {background: white; cursor: default;}
 
 .navbar {
+    height: 60px;
     padding: 0px;
+
+}
+
+.navbar .list-inline {
+    margin-bottom: 0px;
+    padding: 8px 0px 0px;
 }
 
 /*---------------------------------------------------Gameplay Grid 3x3*/
@@ -618,7 +627,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 @media screen and (max-width: 320px) {
 .container-header {
-    margin-top: -15px;
+    padding-top: 15px;
 }
 
 .btn-group-vertical {
@@ -626,14 +635,19 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .btn--game {
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 6px;
 }
 
 .container-game {
-    margin-top: 6px;
+    margin-top: 13px;
 }
 
-footer {
-    margin-top: 38px;
+.container-footer {
+    margin-top: 40px;
 }
+}
+
+@media screen and (min-width: 320px) {
+
 }
