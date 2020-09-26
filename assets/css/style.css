@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo:100,200,300,400,500,600,700|Gloria+Hallelujah:100,200,300,400,500,600,700');
 
-body {
+html, body {
     font-family: "Dokdo", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*---------------------------------------------------Backgrounds*/
 
 /*index.html background*/
-.background-home { 
+#background-home { 
     background: url("../../assets/images/backgrounds/portal.png") no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .background-rick { 
@@ -22,7 +25,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .background-morty { 
@@ -31,7 +35,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .background-bonus { 
@@ -40,7 +45,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 /*---------------------------------------------------/Backgrounds*/
@@ -84,7 +90,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 200px;
+    width: 120px;
     height: 50px;
     background-color: #f50909f8;
     border: solid 3px #fff;
@@ -126,7 +132,7 @@ h1 {
     justify-content: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 250px;
+    width: 212px;
 }
 
 /*Play Button*/
@@ -168,11 +174,10 @@ button .btn--play {
 
 /*Footer*/
 footer {
-    position:fixed;
-    bottom:0;
-    left:0;
     text-align: center;
 }
+
+
 
 /*Name*/
 #footer-details h5 {
@@ -611,4 +616,24 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /*---------------------------------------------------Media Queries*/
 
+@media screen and (max-width: 320px) {
+.container-header {
+    margin-top: -15px;
+}
 
+.btn-group-vertical {
+    margin: 0px auto 69px
+}
+
+.btn--game {
+    margin-bottom: 5px;
+}
+
+.container-game {
+    margin-top: 6px;
+}
+
+footer {
+    margin-top: 38px;
+}
+}
