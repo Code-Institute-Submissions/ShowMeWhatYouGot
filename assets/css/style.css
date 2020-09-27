@@ -637,6 +637,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .container-footer {
     margin-top: 40px;
 }
+
 }
 
 @media screen and (min-width: 321px) {
@@ -649,17 +650,45 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .container-footer {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .btn-group-vertical {
     top: 73px;
-    margin: 0px auto 69px;
+    margin: 0px auto 95px;
 }
 
 .container-game {
     margin-top: 40px;
 }
 
+.win-body {
+    padding-top: 25px;
+}
 
+}
+
+@media screen and (min-width: 376px) {
+.container-header {
+    padding-top: 75px;
+}
+
+.container-enter {
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+
+.btn-group-vertical {
+    top: 65px;
+    margin: 0px auto 90px;
+}
+
+.win-body{
+    padding-top: 70px;
+}
+}
+
+@media screen and (min-width: 426px) {
+.container-header {
+    padding-top: 220px;
 }
