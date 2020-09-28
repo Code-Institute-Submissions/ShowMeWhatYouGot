@@ -180,6 +180,7 @@ button .btn--play {
 /*Social Icons*/
 ul {
     list-style-type: none;
+    margin-bottom: 0px;
 }
 
 /*Social Icons Link Element*/
@@ -225,7 +226,7 @@ li .play-img {
 .modal-content {
     background: url("../../assets/images/backgrounds/portal.png") no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     border: 3px solid #fff;
 }
 
@@ -638,6 +639,10 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-top: 40px;
 }
 
+.modal-content {
+    height: 90vh;
+}
+
 }
 
 @media screen and (min-width: 321px) {
@@ -662,6 +667,10 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-top: 40px;
 }
 
+.modal-content {
+    height: 88vh;
+}
+
 .win-body {
     padding-top: 25px;
 }
@@ -684,11 +693,48 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .win-body{
-    padding-top: 70px;
+    padding-top: 35px;
 }
 }
 
 @media screen and (min-width: 426px) {
 .container-header {
-    padding-top: 220px;
+    padding-top: 200px;
+}
+
+.modal-content {
+    height: 70vh;
+}
+
+.win-body{
+    padding-top: 55px;
+}
+}
+
+@media screen and (min-width: 769px) {
+.container-header {
+    padding-top: 65px;
+}
+
+.modal-content {
+    height: 60vh;
+}
+
+#win-modal .modal-content{
+    height: 50vh;
+}
+
+#bonus-win-modal .modal-content {
+    height: 50vh
+}
+}
+
+@media screen and (min-width: 1025px) {
+.container-header {
+    padding-top: 65px;
+}
+
+.modal-content {
+    height: 88vh;
+}
 }
