@@ -1,39 +1,25 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# **Show Me What You Got!**
 
-Welcome bicks79,
+[Show Me What you got!](https://bicks79.github.io/ShowMeWhatYouGot/) is a memory puzzle game based on the [Adult Swim](https://www.adultswim.com/) animated TV show [Rick and Morty](https://www.rickandmorty.com/).
+It is the second of four major projects to be undertaken on the [Code Institute](https://codeinstitute.net/) Full Stack Developer software course.
+The purpose of this project is to combine my experience of front end programming languages and produce a fully interactive site that demonstrates my knowledge and understanding of [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/CSS) and [JavaScript](https://en.wikipedia.org/wiki/JavaScript).
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+## **UX**
+The purpose of the project is to create a fully interactive website/application using front end programming languages.
+As a gamer, I decided to build a memory based puzzle game as I thought this would offer the most interactivity.
+I started to ask myself questions about my project:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### **User Stories**
+ - As a user, I want something fun to play.
+ - As a user, I want to play something easy.
+ - As a user, I want to be challenged.
+ - As a user, I want to play something relatable.
+ - As a user, I want to play something on my daily commute.
+ - As a user, I want to play something different.
+ - As a User, I want to know how to play the game.
+ - As a user, I want to be able to turn the audio on/off.
+ - As a user, I want to know when I've won the game.
+ - As a user, I want to play again.
+ - As a user, I want to give up.
+ 
