@@ -506,6 +506,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .tile8-3x3 {background-position: center bottom;}
 .tile9-3x3 {background: white; cursor: default;}
 
+.disabled {
+    pointer-events: none;
+}
+
 .navbar {
     height: 60px;
     padding: 0px;

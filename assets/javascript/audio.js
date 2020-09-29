@@ -71,6 +71,7 @@ function gMusic() {
 let musicVolumeSlider = document.querySelector('#music-volume-slider');
 musicVolumeSlider.addEventListener('input', () => {
     audio.themeMusic.volume = musicVolumeSlider.valueAsNumber / 100;
+    audio.gameMusic.volume = musicVolumeSlider.valueAsNumber / 100;
 });
 
 
@@ -98,6 +99,5 @@ function effectsOnOff() {
         audio.isEffectsMuted = true;
         audio.effectsBtn.innerHTML = "Off";
         audio.menuAudio.muted();
-        console.log(effectsOnOff());
 }
 

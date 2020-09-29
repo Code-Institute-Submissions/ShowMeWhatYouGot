@@ -1,9 +1,14 @@
+//Global variable
+let isShuffled = false;
+
+//In-game music to autoplay on load.
 window.onload = function() {
     document.getElementById("game-music").play();
     audio.gameMusic.loop = true;
     audio.gameMusic.volume = 0.4;
 }
 
+//Swpping the tiles
 function swapTiles(cell1, cell2) {
   var temp = document.getElementById(cell1).className;
   document.getElementById(cell1).className = document.getElementById(cell2).className;
@@ -15,7 +20,9 @@ function swapTiles(cell1, cell2) {
     }
 }
 
+//Shuffling the puzzle
 function shuffle() {
+     isShuffled = true;
 //Use nested loops to access each cell of the 3x3 grid
 for (var row = 1; row <= 3; row ++) { //For each row of the 3x3 grid
    for (var column = 1; column <= 3; column++) { //For each column in this row
@@ -29,9 +36,11 @@ for (var row = 1; row <= 3; row ++) { //For each row of the 3x3 grid
 }
 
 function clickTile(row, column) {
-  var cell = document.getElementById("cell" + row + column);
-  var tile = cell.className;
-  if (tile != "tile9-3x3") { 
+  if (isShuffled = true) {
+    swapTiles();
+   var cell = document.getElementById("cell" + row + column);
+   var tile = cell.className;
+   if (tile != "tile9-3x3") { 
        //Checking if white tile on the right
        if (column < 3) {
          if (document.getElementById("cell" + row + (column + 1)).className == "tile9-3x3") {
@@ -59,6 +68,9 @@ function clickTile(row, column) {
            swapTiles("cell" + row + column, "cell" + (row + 1) + column);
            return;
          }
+       }
+   } else {
+           return;
        } 
   }
   
