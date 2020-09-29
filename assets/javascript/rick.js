@@ -1,6 +1,10 @@
 //Global variable
 let isShuffled = false;
 
+/*Disable this variable if you are having trouble completing the game.
+This will allow you to move the tiles before shuffle and complete the
+puzzle in 2 clicks*/
+
 //In-game music to autoplay on load.
 window.onload = function() {
     document.getElementById("game-music").play();
@@ -36,8 +40,7 @@ for (var row = 1; row <= 3; row ++) { //For each row of the 3x3 grid
 }
 
 function clickTile(row, column) {
-  if (isShuffled = true) {
-    swapTiles();
+  if (isShuffled == true) {
    var cell = document.getElementById("cell" + row + column);
    var tile = cell.className;
    if (tile != "tile9-3x3") { 
@@ -69,9 +72,9 @@ function clickTile(row, column) {
            return;
          }
        }
+    }
    } else {
-           return;
-       } 
+           return; 
   }
   
 }

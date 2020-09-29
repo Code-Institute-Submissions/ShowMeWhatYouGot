@@ -1,3 +1,10 @@
+//Global variable
+let isShuffled = false;
+
+/*Disable this variable if you are having trouble completing the game.
+This will allow you to move the tiles before shuffle and complete the
+puzzle in 2 clicks*/
+
 window.onload = function() {
     document.getElementById("game-music").play();
     audio.gameMusic.loop = true;
@@ -16,6 +23,7 @@ function swapTiles(cell1, cell2) {
 }
 
 function shuffle() {
+    isShuffled = true;
 //Use nested loops to access each cell of the 4x4 grid
 for (var row = 1; row <= 4; row++) { //For each row of the 4x4 grid
    for (var column = 1; column <= 4; column++) { //For each column in this row
@@ -29,6 +37,7 @@ for (var row = 1; row <= 4; row++) { //For each row of the 4x4 grid
 }
 
 function clickTile(row, column) {
+    if (isShuffled == true) {
   var cell = document.getElementById("cell" + row + column);
   var tile = cell.className;
   if (tile != "tile16-4x4b") { 
@@ -58,11 +67,15 @@ function clickTile(row, column) {
          if (document.getElementById("cell" + (row + 1) + column).className == "tile16-4x4b") {
            swapTiles("cell" + row + column, "cell" + (row + 1) + column);
            return;
-         }
-       } 
+        }
+       }
+    }
+   } else {
+           return; 
   }
   
 }
+
     //Completing the puzzle
 function checkWin() {
     //Checks if all tiles are aligned in row 1
