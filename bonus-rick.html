@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" data-dismiss="modal" onclick="gMusic();">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -140,12 +140,12 @@
                         <h5 class=" col-12 modal-sub-title">Music</h5>
                         <ul>
                             <li>
-                                <label for="music-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
-                                <input type="range" value="40" min="0" max="100" step="10" id="music-volume-slider" class="slider" name="music-volume"> 
+                                <label for="game-volume-slider" class="audio-volume-label">Turn the in-game music volume up/down: </label>
+                                <input type="range" value="40" min="0" max="100" step="1" id="game-volume-slider" class="slider" name="game-volume"> 
                             </li>                          
                             <li class="audio-text">Turn the in-game music on/off: </li>
                             <li>
-                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="musicOnOff();">On</button>
+                                <button type="button" id="music-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="gameMusicOnOff();">On</button>
                             </li>
                         </ul>
                     </div>
@@ -155,17 +155,17 @@
                         <ul>
                             <li>
                                 <label for="effects-volume-slider" class="audio-volume-label">Turn the in-game sound-effects up/down: </label>
-                                <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                                <input type="range" value="60" min="0" max="100" step="1" id="effects-volume-slider" class="slider" name="effects-volume"> 
                             </li>                         
                             <li class="audio-text">Turn the in-game sound-effects on/off: </li>
                             <li>
-                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                                <button type="button" id="effects-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="effectsOnOff();">On</button>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" data-dismiss="modal" onclick="gMusic();">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

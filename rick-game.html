@@ -63,7 +63,7 @@
                     <img src="assets/images/icons/meeseeks-box.png" data-toggle="modal" data-target="#how-to-play-modal" alt="How to Play" onclick="howToPlay();">
                 </li>
                 <li class="list-inline-item">
-                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio">
+                    <img src="assets/images/icons/notes.png" data-toggle="modal" data-target="#audio-modal" alt="audio" onclick="canDo();">
                 </li>
             </ul>
         </nav>     
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" onclick="gMusic();" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -157,17 +157,17 @@
                         <ul>
                             <li>
                                 <label for="effects-volume-slider" class="audio-volume-label">Turn the in-game sound-effects up/down: </label>
-                                <input type="range" value="40" min="0" max="100" step="10" id="effects-volume-slider" class="slider" name="effects-volume"> 
+                                <input type="range" value="60" min="0" max="100" step="1" id="effects-volume-slider" class="slider" name="effects-volume"> 
                             </li>                         
                             <li class="audio-text">Turn the in-game sound-effects on/off: </li>
                             <li>
-                                <button type="button" class="btn btn--audio active " data-toggle="button" aria-pressed="true">on</button>
+                                <button type="button" id="effects-btn" class="btn btn--audio active" data-toggle="button" aria-pressed="true" onclick="effectsOnOff();">On</button>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close btn btn--close" onclick="gMusic();" data-dismiss="modal">Close</button>
+                    <button type="button" class="close btn btn--close" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

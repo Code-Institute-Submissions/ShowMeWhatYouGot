@@ -38,13 +38,11 @@ function showMe() {
 //meeseeks box - how to play
 function howToPlay() {
     audio.meeseeksAudio.play();
-    audio.gameMusic.pause();
 }
 
 //notes - audio menu
 function canDo() {
     audio.inGameAudio.play();
-    audio.gameMusic.pause();
 }
 
 //Move Game - swipe
@@ -62,15 +60,21 @@ window.onload = function() {
 
 //In-game Music located on relevant .js page due to one .onload function per page.
 
-function gMusic() {
-    audio.gameMusic.play();
-}
-
-
 //--------------------------------------------------Volume Sliders
 var musicVolumeSlider = document.querySelector('#music-volume-slider');
     musicVolumeSlider.addEventListener('input', () => {
     audio.themeMusic.volume = musicVolumeSlider.valueAsNumber / 100;
+});
+
+var effectsVolumeSlider = document.querySelector('#effects-volume-slider');
+    effectsVolumeSlider.addEventListener('input', () => {
+    audio.menuAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.bonusWinAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.shuffleAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.meeseeksAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.inGameAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.rickAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
+    audio.swipeAudio.volume = effectsVolumeSlider.valueAsNumber / 100;
 });
 
 
@@ -92,10 +96,23 @@ function effectsOnOff() {
     if (audio.isEffectsMuted === true) {
         audio.isEffectsMuted = false;
         audio.effectsBtn.innerHTML = "On";
-        audio.menuAudio.play();
+        audio.menuAudio.muted = false;
+        audio.bonusWinAudio.muted = false;
+        audio.shuffleAudio.muted = false;
+        audio.meeseeksAudio.muted = false;
+        audio.inGameAudio.muted = false;
+        audio.rickAudio.muted = false;
+        audio.swipeAudio.muted = false;
     } else if (audio.isEffectsMuted === false) {
+        console.log("button off")
         audio.isEffectsMuted = true;
         audio.effectsBtn.innerHTML = "Off";
-        audio.menuAudio.muted();
+        audio.menuAudio.muted = true;
+        audio.bonusWinAudio.muted = true;
+        audio.shuffleAudio.muted = true;
+        audio.meeseeksAudio.muted = true;
+        audio.inGameAudio.muted = true;
+        audio.rickAudio.muted = true;
+        audio.swipeAudio.muted = true
     }
 }
