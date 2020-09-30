@@ -132,7 +132,7 @@ This would help keep the game fresh and prevent the user from becoming bored wit
 - [Cascading Style Sheets (CSS)](https://www.w3schools.com/css/default.asp) is a style sheet language used for describing the presentation of a document written in a mark-up language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. - Wikipedia
 
 #### **JavaScript**
-- [JavaScript]https://www.w3schools.com/js/DEFAULT.asp is the worlds most popular programming language, and the programming language of the web.
+- [JavaScript](https://www.w3schools.com/js/DEFAULT.asp) is the worlds most popular programming language, and the programming language of the web.
 
 #### **Bootstrap**
 - [Bootstrap](https://getbootstrap.com/) is a free and open source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components. - Wikipedia
@@ -152,6 +152,9 @@ This would help keep the game fresh and prevent the user from becoming bored wit
 #### **W3C Validation**
 - [Mark-up Validation Service](https://validator.w3.org/) is a validator by the World Wide Web Consortium (W3C) that allows Internet users to check HTML and XHTML documents for well-formed mark-up. Mark-up validation is an important step towards ensuring the technical quality of web pages. – Wikipedia
 
+#### **JS Hint**
+- [JS Hint](https://jshint.com/) is a community-driven tool that detects errors and potential problems in JavaScript code.
+
 #### **GIMP**
 - [GIMP](https://www.gimp.org/) is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks. - Wikipedia
 
@@ -164,7 +167,68 @@ Testing my JavaScript has been more difficult as I have needed to rely on others
 My shortcomings in understanding JavaScript have had an adverse effect on my ability to produce and test code as well as I would have liked.
 
 
-![Testing Results](assets/readme.md/testing/)
+![Testing Results](assets/readme.md/testing/testing.png)
+
+After running my JavaScript through [JS Hint](https://jshint.com/), it was clear that there was issuse with the JavaScript code that I had written.
+These seemed to be minor errors, where duplicaton of variables had taken place. Rectification of these errors has been a slow process
+and will require further attention once my knowledge of the language improves.
+
+#### **Audio Testing**
+While audio is functional, it is by no means clean.  several issues arose during testing that have still to be resolved and I am unequiped to rectify these errors.
+Cross page compatability is not responsive, meaning that the user is required to turn off the audio on every page, if required, rather that being able to select it
+once from the option menu.  This is poor UX and will require major rectification at a later date.  While efforts were made to fix these issues with both my mentor and tutor support,
+I just connot see a way of improving this feature until my understanding of the language improves.
+
+## **Deployment**
+
+#### **Deployed site**
+1.	I created an account on GitHub - https://github.com/bicks79
+2.	I used the my-full-template - https://github.com/Code-Institute-Org/gitpod-full-template from Code Institute as the base for my project.
+3.	I created the repository - https://github.com/bicks79/ShowMeWhatYouGot for my Milestone project.
+4.	To publish the project and make it available for public viewing, I used the following steps: 
+    - Opened my repositories.
+    - Selected - https://github.com/bicks79/ShowMeWhatYouGot from the list of repositories. 
+    - Chose the settings option on the right of the taskbar.
+    - Scrolled down the page until ‘GitHub Pages’ was visible.
+    - Clicked on the ‘source settings’ drop-down menu and selected ‘master branch’ for publishing.
+    - You are returned to the top of the page.
+    - After scrolling back down to ‘GitHub Pages’, a link to my repository was available.
+    - My project is now available to view publicly - https://bicks79.github.io/ShowMeWhatYouGot/
+
+#### **Cloning the Repository**
+1. Using the above steps, navigate to the ShowMeWhatYouGot repository.
+2. Select the green 'Code' button
+3. Using the clipboard icon, copy the repository under 'HTTPS'
+4. Open Git Bash
+5. Change the current working directory to the location where you wish to clone the repository
+6. Type git clone, and then paste in the URL.
+
+## **Credits**
+
+#### **Content**
+- [HTML](https://www.w3schools.com/html/default.asp)
+- [CSS](https://www.w3schools.com/css/default.asp)
+- [JavaScript](https://www.w3schools.com/js/DEFAULT.asp)
+- [101 Computing.net](https://www.101computing.net/sliding-puzzle/)
+- [CDN.JS](https://cdnjs.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [CSS Tricks](https://css-tricks.com/)
+- [CSShake](https://elrumordelaluz.github.io/csshake/)
+- [Popper](https://popper.js.org/)
+- [Stack Overflow](https://stackoverflow.com/)
+
+#### **Media**
+All images and audio are the property of [Adult Swim](https://www.adultswim.com/) and [Rick and Morty](https://www.rickandmorty.com/).
+I do not own, or claim to own any of the images or audio used within this project.
+
+## **Acknowledgements**
+- Thank you to [Adult Swim](https://www.adultswim.com/) and [Rick and Morty](https://www.rickandmorty.com/), for hours of entertainment, this project would not have been possible without your content.
+- Thank you to my family for their constant support and motivation during my struggle with JavaScript.
+- Thank you to [Stuart Crang](https://www.linkedin.com/in/stuart-crang-50401897/) once again you have been incredibly supportive during what has been a difficult 3/4 months. I honestly don't know how I would still be on this course without you. 
+- Thank you to my Mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
+
+
 
 
 
