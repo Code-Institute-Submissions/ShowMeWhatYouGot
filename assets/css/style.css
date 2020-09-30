@@ -728,12 +728,20 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
 .container-header {
     padding-top: 65px;
 }
 
 .modal-content {
     height: 88vh;
+}
+
+#win-modal .modal-content{
+    height: 68vh;
+}
+
+#bonus-win-modal .modal-content {
+    height: 68vh
 }
 }

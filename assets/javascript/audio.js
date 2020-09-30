@@ -15,7 +15,7 @@ let audio = {
     effectsBtn: document.getElementById('effects-btn'),
     isMusicMuted: false,
     isEffectsMuted: false,
-}
+};
 
 
 //--------------------------------------------------Sound Effects Functions
@@ -58,7 +58,7 @@ window.onload = function() {
     document.getElementById("theme-music").play();
     audio.themeMusic.loop = true;
     audio.themeMusic.volume = 0.4;  
-}
+};
 
 //In-game Music located on relevant .js page due to one .onload function per page.
 

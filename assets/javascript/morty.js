@@ -1,5 +1,5 @@
 //Global variable
-let isShuffled = false;
+var isShuffled = false;
 
 /*Disable this variable if you are having trouble completing the game.
 This will allow you to move the tiles before shuffle and complete the
@@ -9,7 +9,7 @@ window.onload = function() {
     document.getElementById("game-music").play();
     audio.gameMusic.loop = true;
     audio.gameMusic.volume = 0.7;
-}
+};
 
 function swapTiles(cell1, cell2) {
   var temp = document.getElementById(cell1).className;
@@ -103,10 +103,10 @@ function checkWin() {
         }
     }
     //Checks if all tiles are aligned in row 4
-    var row3 = document.getElementById ("row4");
+    var row4 = document.getElementById ("row4");
     for(var i = 0; i<row4.children.length; i++) {
         var n = i + 13;
-        if(row3.children[i].className != "tile" + n.toString() + "-4x4") {
+        if(row4.children[i].className != "tile" + n.toString() + "-4x4") {
             return false;
         }
     }
