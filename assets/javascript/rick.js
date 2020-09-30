@@ -1,3 +1,29 @@
+//--------------------------------------------------In-game audio
+//In-game music to autoplay on load.
+window.onload = function() {
+    document.getElementById("game-music").play();
+    audio.gameMusic.loop = true;
+    audio.gameMusic.volume = 0.4;
+};
+
+var gameVolumeSlider = document.querySelector('#game-volume-slider');
+    gameVolumeSlider.addEventListener('input', () => {
+    audio.gameMusic.volume = musicVolumeSlider.valueAsNumber / 100;
+});
+
+function gameMusicOnOff() {
+    if (audio.isMusicMuted === true) {
+        audio.isMusicMuted = false;
+        audio.musicBtn.innerHTML = "On";
+        audio.gameMusic.play();
+    } else if (audio.isMusicMuted === false) {
+        audio.isMusicMuted = true;
+        audio.musicBtn.innerHTML = "Off";
+        audio.gameMusic.pause();
+    }    
+}
+
+
 //Global variable
 //var isShuffled = false;
 
@@ -5,12 +31,6 @@
 This will allow you to move the tiles before shuffle and complete the
 puzzle in 2 clicks*/
 
-//In-game music to autoplay on load.
-window.onload = function() {
-    document.getElementById("game-music").play();
-    audio.gameMusic.loop = true;
-    audio.gameMusic.volume = 0.7;
-};
 
 //Swpping the tiles
 function swapTiles(cell1, cell2) {
@@ -107,6 +127,7 @@ function checkWin() {
     }
     return true;
 }
+
 
 
 

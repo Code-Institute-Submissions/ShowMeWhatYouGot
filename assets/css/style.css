@@ -167,8 +167,6 @@ button .btn--play {
     height: 65px;
 }
 
-
-
 /*Name*/
 #footer-details h5 {
     font-family: "Gloria Hallelujah", cursive;
@@ -644,6 +642,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 }
 
+/*min width: 321px*/
 @media screen and (min-width: 321px) {
 .container-header {
     padding-top: 40px;
@@ -676,6 +675,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 }
 
+/*min-width: 376px*/
 @media screen and (min-width: 376px) {
 .container-header {
     padding-top: 75px;
@@ -696,6 +696,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 }
 
+/*min-width: 426px*/
 @media screen and (min-width: 426px) {
 .container-header {
     padding-top: 200px;
@@ -710,6 +711,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 }
 
+/*min-width: 769px*/
 @media screen and (min-width: 769px) {
 .container-header {
     padding-top: 65px;
@@ -728,6 +730,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 }
 
+/*min-width: 992px*/
 @media screen and (min-width: 992px) {
 .container-header {
     padding-top: 65px;

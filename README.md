@@ -164,7 +164,7 @@ Testing my JavaScript has been more difficult as I have needed to rely on others
 My shortcomings in understanding JavaScript have had an adverse effect on my ability to produce and test code as well as I would have liked.
 
 
-![Testing Results](assets/readme.md/testing/testing.png)
+![Testing Results](assets/readme.md/testing/)
 
 
 

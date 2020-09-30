@@ -68,10 +68,9 @@ function gMusic() {
 
 
 //--------------------------------------------------Volume Sliders
-let musicVolumeSlider = document.querySelector('#music-volume-slider');
-musicVolumeSlider.addEventListener('input', () => {
+var musicVolumeSlider = document.querySelector('#music-volume-slider');
+    musicVolumeSlider.addEventListener('input', () => {
     audio.themeMusic.volume = musicVolumeSlider.valueAsNumber / 100;
-    audio.gameMusic.volume = musicVolumeSlider.valueAsNumber / 100;
 });
 
 
@@ -82,22 +81,21 @@ function musicOnOff() {
         audio.isMusicMuted = false;
         audio.musicBtn.innerHTML = "On";
         audio.themeMusic.play();
-        audio.gameMusic.play();
-    } else if (audio.isMusicMuted === false)
+    } else if (audio.isMusicMuted === false) {
         audio.isMusicMuted = true;
         audio.musicBtn.innerHTML = "Off";
         audio.themeMusic.pause();
-        audio.gameMusic.pause();
     }    
+}
 
 function effectsOnOff() {
     if (audio.isEffectsMuted === true) {
         audio.isEffectsMuted = false;
         audio.effectsBtn.innerHTML = "On";
         audio.menuAudio.play();
-    } else if (audio.isEffectsMuted === false)
+    } else if (audio.isEffectsMuted === false) {
         audio.isEffectsMuted = true;
         audio.effectsBtn.innerHTML = "Off";
         audio.menuAudio.muted();
+    }
 }
-
